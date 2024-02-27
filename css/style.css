@@ -101,9 +101,8 @@ html {
 .heroSection__container__carousel__item__img {
   filter: brightness(85%);
   z-index: 99;
-  width: 100%;
-  height: 100vh;
   object-fit: cover;
+  height: 100vh;
 }
 .heroSection__container__carousel__item__info {
   z-index: 1;
@@ -111,7 +110,7 @@ html {
   position: absolute;
   top: 36%;
   left: 11%;
-  width: 50%;
+  width: 52%;
   text-align: start;
 }
 .heroSection__container__carousel__item__info__text {
@@ -264,30 +263,6 @@ html {
   background-image: url("../../assets/img/bg/bg.jpg");
 }
 
-@media only screen and (max-width: 768px) {
-  .heroSection {
-    font-family: Inter, sans-serif;
-  }
-  .heroSection__container__carousel__item {
-    position: relative;
-  }
-  .heroSection__container__carousel__item__img {
-    filter: brightness(70%);
-    z-index: 99;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-  }
-  .heroSection__container__carousel__item__info {
-    z-index: 1;
-    display: inline-block;
-    position: absolute;
-    top: 36%;
-    left: 11%;
-    width: 70%;
-    text-align: start;
-  }
-}
 .article {
   font-family: Inter, sans-serif;
 }
@@ -642,39 +617,6 @@ input[type=range] {
 
 .star-widget input:checked ~ label {
   color: #94863D; /* Replace with your desired color */
-}
-
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #FFF;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.wrapper span {
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
-}
-
-.wrapper input.num {
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  pointer-events: none;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 .contactContainer {

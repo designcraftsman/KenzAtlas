@@ -9,15 +9,16 @@ html{
             &__item{
                 position: relative;
                 &__img{
-                    filter:brightness(70%);
+                    filter:brightness(85%);
                     z-index: 99;
-                    height: 90vh;
+                    object-fit: cover;
+                    height: 100vh;
                 }
                 &__info{
                     z-index: 1;
                     display: inline-block;
                     position: absolute;
-                    top:28%;
+                    top:36%;
                     left: 11%;
                     width: 52%;
                     text-align: start;
