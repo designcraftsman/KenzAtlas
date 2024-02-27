@@ -258,6 +258,50 @@ html {
   height: 300px;
 }
 
+@media all and (max-width: 768px) {
+  .heroSection {
+    font-family: Inter, sans-serif;
+  }
+  .heroSection__container__carousel__item {
+    position: relative;
+  }
+  .heroSection__container__carousel__item__img {
+    filter: brightness(85%);
+    z-index: 99;
+    object-fit: cover;
+    height: 100vh;
+  }
+  .heroSection__container__carousel__item__info {
+    z-index: 1;
+    display: inline-block;
+    position: absolute;
+    top: 36%;
+    left: 11%;
+    width: 80%;
+    text-align: start;
+  }
+  .heroSection__container__carousel__item__info__text {
+    animation: display-text 800ms;
+    animation-delay: 600ms;
+    transform-origin: top;
+    animation-fill-mode: both;
+  }
+  .heroSection__container__carousel__item__info__h3 {
+    color: #FFFFFF;
+  }
+  .heroSection__container__carousel__item__info__h2 {
+    color: #FFFFFF;
+  }
+  .heroSection__container__carousel__item__info__p {
+    color: #FFFFFF;
+  }
+  .heroSection__container__carousel__item__info__btn {
+    animation: display-btn 600ms;
+    animation-delay: 600ms;
+    transform-origin: bottom;
+    animation-fill-mode: both;
+  }
+}
 .about {
   font-family: Inter, sans-serif;
   background-image: url("../../assets/img/bg/bg.jpg");

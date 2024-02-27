@@ -1,0 +1,52 @@
+@media all and (max-width:768px){
+.heroSection{ 
+    font-family: Inter,sans-serif;
+    &__container{
+        &__carousel{
+            &__item{
+                position: relative;
+                &__img{
+                    filter:brightness(85%);
+                    z-index: 99;
+                    object-fit: cover;
+                    height: 100vh;
+                }
+                &__info{
+                    z-index: 1;
+                    display: inline-block;
+                    position: absolute;
+                    top:36%;
+                    left: 11%;
+                    width: 80%;
+                    text-align: start;
+                    &__text{
+                        animation: display-text 800ms;
+                        animation-delay: 600ms; 
+                        transform-origin: top;
+                        animation-fill-mode: both;
+                    }
+                    &__h3{
+                        color:$text-primary;
+                        
+                    }
+                    &__h2{ 
+                       
+                        color:$text-primary;
+                    }
+                    &__p{
+                      
+                        color:$text-primary;
+                    }
+                    &__btn{
+                        animation: display-btn 600ms;
+                        animation-delay: 600ms; 
+                        transform-origin: bottom;
+                        animation-fill-mode: both;
+                    }
+
+                }
+            }
+        }
+    }
+}
+}
