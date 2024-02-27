@@ -309,9 +309,9 @@
                 <img  src="assets/<?php echo($packs[0]['imageProduit1']); ?>"  class="  d-block w-100 heroSection__container__carousel__item__img " alt="...">
                 <div class=" heroSection__container__carousel__item__info    ">
                   <div class="heroSection__container__carousel__item__info__text ">
-                    <h3 class="fs-5 fw-light heroSection__container__carousel__item__info__h3 ">PACK</h3>
-                    <h2 class="fs-1  fw-bold mt-3 heroSection__container__carousel__item__info__h2"><?php echo($packs[0]['nomProduit']); ?></h2>
-                    <p class="fs-6 mt-3 heroSection__container__carousel__item__info__p "><?php echo($packs[0]['sousTitreProduit']); ?></p>
+                    <h3 class="fs-4 fw-light heroSection__container__carousel__item__info__h3 ">PACK</h3>
+                    <h2 class="display-4  fw-bold mt-4 heroSection__container__carousel__item__info__h2"><?php echo($packs[0]['nomProduit']); ?></h2>
+                    <p class="fs-6 mt-4 heroSection__container__carousel__item__info__p "><?php echo($packs[0]['sousTitreProduit']); ?></p>
                   </div> 
                   <a type="button" href="product?idProduit=<?php echo($packs[0]['idProduit']); ?>" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn  fw-bolder">Acheter Maintenant</a>
                 </div>
@@ -321,9 +321,9 @@
                 <img  src="<?php echo($packs[1]['imageProduit1']); ?>"  class=" d-block w-100 heroSection__container__carousel__item__img " alt="...">
                 <div class=" heroSection__container__carousel__item__info    ">
                   <div class="heroSection__container__carousel__item__info__text ">
-                    <h3 class="fs-5 fw-light heroSection__container__carousel__item__info__h3 ">PACK</h3>
-                    <h2 class="fs-1  fw-bold mt-3 heroSection__container__carousel__item__info__h2"><?php echo($packs[1]['nomProduit']); ?></h2>
-                    <p class="fs-6 mt-3 heroSection__container__carousel__item__info__p "><?php echo($packs[1]['sousTitreProduit']); ?></p>
+                    <h3 class="fs-4 fw-light heroSection__container__carousel__item__info__h3 ">PACK</h3>
+                    <h2 class="display-4  fw-bold mt-4 heroSection__container__carousel__item__info__h2"><?php echo($packs[1]['nomProduit']); ?></h2>
+                    <p class="fs-6 mt-4 heroSection__container__carousel__item__info__p "><?php echo($packs[1]['sousTitreProduit']); ?></p>
                   </div> 
                   <a type="button" href="product?idProduit=<?php echo($packs[1]['idProduit']); ?>" class="btn btn-primary btn-lg text-secondary heroSection__container__carousel__item__info__btn fs-5  fw-bolder">Acheter Maintenant</a>
                 </div>
@@ -332,9 +332,9 @@
                 <img  src="<?php echo($packs[2]['imageProduit1']); ?>"  class="object-fit-cover d-block w-100 heroSection__container__carousel__item__img " alt="...">
                 <div class=" heroSection__container__carousel__item__info    ">
                   <div class="heroSection__container__carousel__item__info__text ">
-                    <h3 class="fs-6 fw-light heroSection__container__carousel__item__info__h3 ">PACK</h3>
-                    <h2 class="fs-1  fw-bold mt-3 heroSection__container__carousel__item__info__h2"><?php echo($packs[2]['nomProduit']); ?></h2>
-                    <p class="fs-6 mt-3 heroSection__container__carousel__item__info__p "><?php echo($packs[2]['sousTitreProduit']); ?></p>
+                    <h3 class="fs-4 fw-light heroSection__container__carousel__item__info__h3 ">PACK</h3>
+                    <h2 class="display-4  fw-bold mt-4 heroSection__container__carousel__item__info__h2"><?php echo($packs[2]['nomProduit']); ?></h2>
+                    <p class="fs-6 mt-4 heroSection__container__carousel__item__info__p "><?php echo($packs[2]['sousTitreProduit']); ?></p>
                   </div> 
                   <a type="button" href="product?idProduit=<?php echo($packs[2]['idProduit']); ?>" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn  fw-bolder">Acheter Maintenant</a>
                 </div>
@@ -362,7 +362,7 @@
                      echo($produit['imageProduit2']);}else{
                       echo($produit['imageProduit1']);
                      } 
-                     ?>" class="img-fluid card-img-top ProductsImages" alt="...">
+                     ?>"  class="img-fluid card-img-top ProductsImages" alt="...">
               <button class="btn btn-primary   rounded-0 btn-lg fw-light text-secondary ProductsImagesBtns">DECOUVRIR</button>
             </div>
             <div class="card-body">
@@ -394,7 +394,7 @@
     <section class="container-fluid text-center mt-5 categoriesSection">
       <div class="row categoriesSection__container">
         <div class="col-lg-6 col-12   p-0 categoriesSection__container__item mt-2 mb-4">
-          <img src="assets/img/homePage/categoriesSection/haircare.jpg " class="w-100 h-100 reveal" alt="">
+          <img  src="assets/img/homePage/categoriesSection/haircare.jpg " class="w-100 h-100 reveal" alt="">
           <div class="categoriesSection__container__item__info text-secondary reveal">
             <h3 class="categoriesSection__container__item__info__h3 fs-2 fw-lighter   ">Meilleur de</h3>
             <h2 class="categoriesSection__container__item__info__h2 fs-1 fw-bolder ">SOIN DES <br> CHEVEUX</h2>
@@ -402,7 +402,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-12  p-0  categoriesSection__container__item mt-5 ">
-          <img src="assets/img/homePage/categoriesSection/skincare2.jpg " class="w-100 h-100 reveal" alt="">
+          <img  src="assets/img/homePage/categoriesSection/skincare2.jpg " class="w-100 h-100 reveal" alt="">
           <div class="categoriesSection__container__item__info text-secondary reveal ">
             <h3 class="categoriesSection__container__item__info__h3 fs-2 fw-lighter ">Meilleur de</h3>
             <h2 class="categoriesSection__container__item__info__h2 fs-1 fw-bolder ">SOIN DE <br> LA PEAU</h2>
@@ -422,7 +422,7 @@
         <div class="col-lg-4 col-md-6 col-12 infoSection__container__item  mt-5 ">
           <div class="infoSection__container__item__icon m-3 reveal"><i class="fa-solid fa-truck display-1 text-primary "></i></div>
           <h2 class="infoSection__container__item__title  m-4 fs-3 fw-bold 3  reveal ">Livraison gratuite</h2>
-          <h3 class="infoSection__container__item__subTitle fw-normal fs-5  reveal">Livraison gratuite pour tous les commandes</h3>
+          <h3 class="infoSection__container__item__subTitle fw-normal fs-5  reveal">Livraison gratuite pour toutes les commandes</h3>
         </div>
         <div class="col-lg-4 col-md-6 col-12 infoSection__container__item  mt-5 ">
           <div class="infoSection__container__item__icon m-3 reveal"><i class="fa-solid fa-arrow-right-arrow-left display-1  text-primary "></i></div>
@@ -447,7 +447,7 @@
       <div class="container  p-2 clientReviewSection">
         <div class="row clientReviewSection__container align-items-center ">
           <div class="col-lg-3  col-12 clientReviewSection__container__text  text-lg-start text-center    ">
-            <div class="clientReviewSection__container__text__icon m-4 reveal"><img src="assets/img/homePage/clientReviewsSection/clientReview.svg" class="w-25 text-secondary " alt=""></div>
+            <div class="clientReviewSection__container__text__icon m-4 reveal"><img loading="lazy" src="assets/img/homePage/clientReviewsSection/clientReview.svg" class="w-25 text-secondary " alt=""></div>
             <h2 class="clientReviewSection__container__text__title m-4 fs-2 fw-bold reveal">Avis client</h2> 
             <h3 class="clientReviewSection__container__text__subTitle m-4 fs-3 fw-light reveal">Ce que nos clients disent de nos produits</h3> 
           </div>
@@ -478,7 +478,7 @@
                     <div class="col-lg-5 col-md-8 col-9 m-auto ">
                       <div class="card text-center  h-100">
                         <div class="card-header">
-                          <img src="assets/img/homePage/clientReviewsSection/review2.jpg" class="w-25 object-fit-cover  rounded-circle " alt="">
+                          <img src="assets/img/homePage/clientReviewsSection/review2.jpg" loading="lazy" class="w-25 object-fit-cover  rounded-circle " alt="">
                           <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid m-1 fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i></p>
                         </div>
                         <div class="card-body">
@@ -498,7 +498,7 @@
                     <div class="col-lg-5 col-md-8 col-9  m-auto">
                       <div class="card text-center  ">
                         <div class="card-header">
-                          <img src="assets/img/homePage/clientReviewsSection/review3.jpg" class="w-25 rounded-circle " alt="">
+                          <img src="assets/img/homePage/clientReviewsSection/review3.jpg" loading="lazy" class="w-25 rounded-circle " alt="">
                           <p class="card-text text-center m-1 "><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid m-1 fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i></p>
                         </div>
                         <div class="card-body">
@@ -568,7 +568,7 @@
     <script src="js/explore.js"></script>
     <script src="js/scrollReveal.js"></script>
     <script src="js/cart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/searchBar.js"></script>
 </body>
 </html>

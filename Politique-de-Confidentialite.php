@@ -129,10 +129,10 @@
             <p>Par e-mail : kenzatlas@gmail.com</p>
         </li>
         <li>
-            <p>En visitant cette page sur notre site web : <a href="www.kenzatlas.com/contact" rel="external nofollow noopener" target="_blank">www.kenzatlas.com/contact</a></p>
+            <p>En visitant cette page sur notre site web : <a href="contact" rel="external nofollow noopener" target="_blank">www.kenzatlas.com/contact</a></p>
         </li>
         <li>
-            <p>Par numéro de téléphone : +212 6 85972056</p>
+            <p>Par numéro de téléphone : +212 684-822768</p>
         </li>
     </ul>
 

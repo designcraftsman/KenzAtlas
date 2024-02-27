@@ -50,7 +50,7 @@
                   </div>
                   <hr class="border-primary border-3 ">
                   <div class="d-flex justify-content-between align-items-center  mt-2 ">
-                    <p>Vos données personnelles seront utilisées pour traiter votre commande, soutenir votre expérience sur ce site et à d'autres fins décrites dans notre <a href="Politique-de-Confidentialité.html">politique de confidentialité.</a></p>
+                    <p>Vos données personnelles seront utilisées pour traiter votre commande, soutenir votre expérience sur ce site et à d'autres fins décrites dans notre <a href="Politique-de-Confidentialite">politique de confidentialité.</a></p>
                   </div>  
                   <button type="submit" class="btn btn-lg btn-primary text-secondary rounded w-100 fs-5  mt-4">Confirmer ma commande</button>
                 </form>

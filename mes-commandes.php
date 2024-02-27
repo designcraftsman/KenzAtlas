@@ -45,7 +45,7 @@
                                 <?php 
                                     include('connection.php');
                                     $id = $_SESSION['idUtulisateur'];
-                                    $sqlQuery = "SELECT * FROM produitsCommandés WHERE numeroCommande = :numeroCommande;";
+                                    $sqlQuery = "SELECT * FROM produitscommandés WHERE numeroCommande = :numeroCommande;";
                                     $produitsIdStatement = $db->prepare($sqlQuery);
                                     $produitsIdStatement->bindParam(':numeroCommande', $commande['numeroCommande'], PDO::PARAM_STR);
                                     $produitsIdStatement->execute();

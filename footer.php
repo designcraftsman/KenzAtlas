@@ -23,7 +23,7 @@
             <h4>Aide</h3>
               <ul class="list-unstyled text-secondary  ">
                 <li class="fs-6"><a href="terms-conditions" class="text-decoration-none    footer-links">Termes & conditions</a></li>
-                <li class="fs-6"><a href="Politique-de-Confidentialité" class="text-decoration-none   footer-links">Politique de confidentialité</a></li>
+                <li class="fs-6"><a href="Politique-de-Confidentialite" class="text-decoration-none   footer-links">Politique de confidentialité</a></li>
               </ul>
           </div>
         </div>

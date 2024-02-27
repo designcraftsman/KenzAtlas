@@ -28,7 +28,7 @@
                   </p>
             </div>
             <div class="col-lg-5 col-md-5 col-12 m-lg-auto m-md-auto mt-5 ">
-                <img src="assets/img/more/carte.png" class="img-fluid rounded-5  " alt="">
+                <img src="assets/img/more/carte.jpg" class="img-fluid rounded-5  " alt="">
             </div>
         </div>
         <div class="row mt-5 reveal">

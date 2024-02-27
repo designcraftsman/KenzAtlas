@@ -1,0 +1,77 @@
+.productPage{
+    font-family: Inter, sans-serif;
+    &__container{
+        animation: reveal-image 1000ms;
+        animation-delay: 600ms; 
+        animation-fill-mode: both;
+        &__imgContainer{
+            &__chevrons{
+                color:rgb(0, 0, 0);
+            }
+            &__img{
+                img{
+                    height: 550px;
+                }
+            }
+        }
+    }
+    &__product{
+        animation: reveal-product 1000ms;
+        animation-delay: 600ms; 
+        animation-fill-mode: both;
+    }
+}
+
+@keyframes reveal-product {
+    0%{
+        transform: translateX(150px);
+        opacity: 0;
+    }100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal-image {
+    0%{
+        transform: translateX(-150px);
+        opacity: 0;
+    }100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+.stars-rating{
+    transform: scaleX(-1);
+}
+
+.star-widget input {
+    display: none;
+  }
+  
+  .star-widget label {
+    font-size: 20px;
+    color: #6a6a6a;
+    padding: 10px;
+    transition: all 0.2s ease;
+  }
+  
+  .star-widget input:not(:checked) ~ label:hover,
+  .star-widget input:not(:checked) ~ label:hover ~ label {
+    color: $style; /* Replace with your desired color */
+    transition: all 0.2s ease 0.2s; /* Add a delay to the transition for the right-to-left effect */
+  }
+  
+  .star-widget input:checked ~ label {
+    color: $style; /* Replace with your desired color */
+  }
+  
+  
+  
+  
+ 
+
+  

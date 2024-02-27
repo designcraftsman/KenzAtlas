@@ -1,0 +1,49 @@
+.contactContainer{
+    font-family: Inter,sans-serif;
+    &__title{
+        animation: reveal-title 300ms;
+        animation-delay: 500ms; 
+        animation-fill-mode: both;
+    }
+    &__box{
+        animation: reveal-box 500ms;
+        animation-delay: 1000ms; 
+        animation-fill-mode: both;
+    }
+    &__image{
+        &__img{
+            animation: reveal-contact-image 500ms;
+            animation-delay: 1000ms; 
+            animation-fill-mode: both;
+        }
+    }
+}
+@keyframes reveal-contact-image{
+    0%{
+        transform: translateX(150px);
+        opacity: 0;
+    }100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal-title{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal-box{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
