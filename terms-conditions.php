@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TYT83HH22"></script>
@@ -13,6 +13,7 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les présentes conditions générales décrivent les règles et règlements relatifs à l'utilisation du site web de KenzAtlas, situé à l'adresse www.kenzatlas.com" />
     <title>kenzAtlas</title>
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">

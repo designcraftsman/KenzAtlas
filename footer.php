@@ -15,7 +15,7 @@
           <div class="col-lg-3 col-md-4 col-12  text-lg-start text-md-start text-center mt-3 ">
             <h4>A propos</h3>
               <ul class="list-unstyled text-secondary  ">
-                <li class="fs-6"><a href="about" class="text-decoration-none   footer-links">Notre histoire</a></li>
+                <li class="fs-6"><a href="A-Propos" class="text-decoration-none   footer-links">Notre histoire</a></li>
                 <li class="fs-6"><a href="contact" class="text-decoration-none  footer-links">Contact</a></li>
               </ul>
           </div>

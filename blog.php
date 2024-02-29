@@ -18,7 +18,7 @@
     ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TYT83HH22"></script>
@@ -31,6 +31,7 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorez nos articles soigneusement sélectionnés qui vous guideront à travers un voyage enrichissant, des secrets de soins capillaires aux bienfaits des produits naturels, en passant par les tendances du moment. Que vous recherchiez des conseils pour prendre soin de votre peau, des recettes de masques maison, ou des informations sur les dernières innovations en matière de beauté, notre blog est là pour vous inspirer et vous informer." />
     <title>KenzAtlas-Blog</title>
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">

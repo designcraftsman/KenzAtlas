@@ -1,12 +1,13 @@
 <?php session_start(); ?>
 <?php
     include('connection.php');
-    $id = $_GET['idProduit']; 
-    $sqlQuery = "SELECT * FROM produit WHERE idProduit = :idProduit;";
+    $nom = $_GET['nomProduit']; 
+    $sqlQuery = "SELECT * FROM produit WHERE nomProduit = :nomProduit;";
     $produitStatement = $db->prepare($sqlQuery);
-    $produitStatement->bindParam('idProduit', $id, PDO::PARAM_INT); 
+    $produitStatement->bindParam('nomProduit', $nom, PDO::PARAM_STR); 
     $produitStatement->execute();
     $produit = $produitStatement->fetch(PDO::FETCH_ASSOC);
+    $id = $produit['idProduit'];
     include('connection.php');
     $sqlQuery = 'SELECT * FROM `produit` ORDER BY `produit`.`moyenneNotation` DESC LIMIT 4';
     $produitsVedetteStatement = $db->prepare($sqlQuery);
@@ -15,12 +16,12 @@
     include('connection.php');
     $sqlQuery = 'SELECT * FROM avis where idProduit = :idProduit ORDER BY `avis`.`dateAvis` DESC';
     $avisStatement = $db->prepare($sqlQuery);
-    $avisStatement->bindParam(':idProduit', $id, PDO::PARAM_STR);
+    $avisStatement->bindParam(':idProduit', $id, PDO::PARAM_INT);
     $avisStatement->execute();
     $avisGroupe = $avisStatement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TYT83HH22"></script>
@@ -33,6 +34,7 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?php echo($produit['nomProduit'].'.'.$produit['descriptionProduit']); ?>" />
     <title><?php echo($produit['nomProduit']) ?></title>
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
@@ -57,7 +59,7 @@
                      echo($produit['imageProduit2']);}else{
                       echo($produit['imageProduit1']);
                      } 
-                     ?>" class="object-fit-contain productPage__product__img d-block w-100 productPage__container__imgContainer__img__select " alt="...">
+                     ?>" class="object-fit-contain productPage__product__img d-block w-100 productPage__container__imgContainer__img__select " alt="image: <?php echo($produit['nomProduit']); ?>">
                   </div>
                   <?php if(!isset($produit['imageProduit2']) || !isset($produit['imageProduit3'])) { ?>
                   <div class="carousel-item productPage__container__imgContainer__img h-100">
@@ -89,7 +91,7 @@
                   <i class="fa-solid fa-star fa-xs text-primary m-1"></i>
                   <?php } ?>
                 </span> | <span class="m-2"><?php echo(count($avisGroupe)); ?> avis </span></p>
-                <p class="fw-lighter fs-5"><?php echo($produit['sousTitreProduit']); ?></p>
+                <h2 class="fw-lighter fs-5"><?php echo($produit['sousTitreProduit']); ?></h2>
                 <div class="d-flex justify-content-between align-items-center p-2 ">
                   <div>
                     <p class=" fs-6 d-inline ">Quantité : 
@@ -125,7 +127,7 @@
               <?php foreach($produitsVedette as $produitVedette){ ?>
               <div class="col-lg-3 col-md-6 col-10 mt-2 ">
                 <div class="card border-0 m-auto w-100 ProductsCards" >
-                  <a href="product?idProduit=<?php echo($produitVedette['idProduit']); ?>" class="text-decoration-none text-dark">
+                  <a href="produit?nomProduit=<?php echo($produitVedette['nomProduit']); ?>" class="text-decoration-none text-dark">
                   <div class="ProductsImageContainers">
                     <img src="assets/<?php
                     if($produitVedette['etatProduit']=="pack promo"){
@@ -159,7 +161,7 @@
         <section class="mt-5 p-3 ">
             <h2 class="text-center fw-bolder m-3 reveal">Avis Clients</h2>
             <div class="comments">
-            <h2 class="fs-5 fw-semibold reveal">Rédiger un avis :</h2>
+            <h3 class="fs-5 fw-semibold reveal">Rédiger un avis :</h3>
             <form method="POST" class="reveal">
               <div class="star-widget mb-3 d-flex  align-items-center flex-wrap">
                   <span class="fs-6 fw-light">Noter le produit :</span>

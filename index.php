@@ -21,20 +21,21 @@
           }
               ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TYT83HH22"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TYT83HH22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-1TYT83HH22');
-  </script>
+      gtag('config', 'G-1TYT83HH22');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kenzAtlas</title>
+    <meta name="description" content="KenzAtlas est une marque de cosmétiques 100% marocaine qui puise son inspiration dans la richesse naturelle et culturelle du Maroc.Notre mission chez KenzAtlas est de sublimer la beauté naturelle de chacun en proposant une gamme de produits de beauté exclusivement composés d'ingrédients naturels d'exception tel que l’argile, henné, et safran." />
+    <title>KenzAtlas</title>
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -118,23 +119,23 @@
  <!--navbar debut-->
  <nav class="navbar navbar-light bg-primary fixed-top  p-0 m-0  ">
         <div class="container-fluid navbar__container m-0 p-0">
-          <a class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <span class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
              <i  class="fa-solid fa-bars-staggered fa-xl navbar__container__icon navbar__icon "></i>
-          </a>
-            <a class="navbar-brand " href="index">
+              </span>
+            <a class="navbar-brand " href=".">
                 <!--Logo image-->
-                <img src="assets/img/logo/svg_white.svg" alt=""  width="160" class="d-inline-block align-text-top">
+                <img src="assets/img/logo/svg_white.svg" alt="KenzAtlas-Logo"  width="160" class="d-inline-block align-text-top">
             </a>
             <div class="navbar__container__options order-lg-2 pe-4 ">
-                <a class="m-1" data-bs-toggle="collapse" href="#collapseExample" type="button" aria-expanded="false" aria-controls="collapseExample">
+                <span class="m-1" data-bs-toggle="collapse" href="#collapseExample" type="button" aria-expanded="false" aria-controls="collapseExample">
                   <i class="fa-solid fa-magnifying-glass fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
-                </a>
+              </span>
                 <?php if(!isset($_SESSION['nomUtulisateur'])){ ?>
-                <a  type="button" data-bs-toggle="modal" data-bs-target="#login">
+                <span  type="button" data-bs-toggle="modal" data-bs-target="#login">
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
-                </a>
+                </span>
                 <?php }else{ ?>
-                <a  class="text-decoration-none m-1 d-none d-lg-inline-block" data-bs-toggle="collapse" href="#userCollapse" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                <span class="text-decoration-none m-1 d-none d-lg-inline-block " data-bs-toggle="collapse" href="#userCollapse" role="button" aria-expanded="false" aria-controls="collapseExample" >
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons  navbar__icon m-auto" ></i>
                    <span class="fs-6 fw-light text-secon text-secondary"><?php echo($_SESSION['prenomUtulisateur'].' '.$_SESSION['nomUtulisateur']); ?></span>
                    <div class="collapse position-absolute ms-4 " id="userCollapse">
@@ -149,9 +150,9 @@
                       <hr class="m-0 p-0 border-primary ">
                     </div>
                 </div>
-                </a>
+                </span>
                 <?php }?>
-                <a href="cart.php" class="d-inline-block  m-lg-1 m-0   position-relative navbar__container__options__cart  ">
+                <a href="panier" class="d-inline-block  m-lg-1 m-0   position-relative navbar__container__options__cart  ">
                   <span id="cartIconContainer" class="d-inline-block bg-dark rounded-5"></span>
                   <span id="cartIcon" class=" text-center   text-secondary  fs-6 fw-bolder "></span>   
                   <i class="fa-solid fa-cart-shopping fa-lg pointer-event  navbar__container__options__icons navbar__icon " ></i>
@@ -170,15 +171,15 @@
         <div class="offcanvas-header ">
             <!--Logo image-->
             <div class="m-auto ">
-              <img src="assets/img/logo/svg_yellow (1).svg" alt=""  width="180" class="d-inline-block align-text-top">
+              <img src="assets/img/logo/svg_yellow (1).svg" alt="KenzAtlas-Logo"  width="180" class="d-inline-block align-text-top">
             </div>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body offcanvasNavbar__nav m-0 p-0 text-center  mt-5">
           <hr class="m-0 p-0">
-            <a href="index" class="d-block  text-decoration-none pt-3 pb-3 fs-6 offcanvasNavbar__nav__link ">Accueil</a>
+            <a href="." class="d-block  text-decoration-none pt-3 pb-3 fs-6 offcanvasNavbar__nav__link ">Accueil</a>
             <hr class="m-0 p-0">
-            <a href="shop" class="d-block  text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Boutique</a>
+            <a href="boutique" class="d-block  text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Boutique</a>
             <hr class="m-0 p-0">
             <?php if(isset($_SESSION['nomUtulisateur'])){ ?>
               <a href="mes-commandes" class="d-lg-none d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Mes commandes</a>
@@ -188,7 +189,7 @@
             <hr class="m-0 p-0">
             <a href="contact" class="d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Contactez-Nous</a>
             <hr class="m-0 p-0">
-            <a href="about" class="d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">À propos de KenzAtlas</a>
+            <a href="A-Propos" class="d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">À propos de KenzAtlas</a>
             <hr class="m-0 p-0">
             <?php if(isset($_SESSION['nomUtulisateur'])){ ?>
               <a href="signout" class="d-lg-none d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Se déconnecter</a>
@@ -224,7 +225,7 @@
           </div>
           
           <div class="p-1 text-center ">
-            <a href="shop" class="text-decoration-none ">
+            <a href="boutique" class="text-decoration-none ">
               <i class="fa-solid fa-shop fa-xl text-secondary"></i>
               <span class="d-block text-secondary">boutique</span>
             </a>
@@ -315,37 +316,37 @@
             <?php }?>
             <div class="carousel-inner active heroSection__container__carousel">
               <div class="carousel-item h-100  active heroSection__container__carousel__item" data-bs-interval="10000">
-                <img  src="assets/<?php echo($packs[0]['imageProduit1']); ?>"  class="  d-block w-100 heroSection__container__carousel__item__img " alt="...">
+                <img  src="assets/<?php echo($packs[0]['imageProduit1']); ?>"  class="  d-block w-100 heroSection__container__carousel__item__img " alt="image: <?php echo($packs[0]['nomProduit']); ?>">
                 <div class=" heroSection__container__carousel__item__info    ">
                   <div class="heroSection__container__carousel__item__info__text ">
                     <h3 class="fs-4 fw-light heroSection__container__carousel__item__info__h3 ">PACK</h3>
                     <h2 class="display-4  fw-bold mt-4 heroSection__container__carousel__item__info__h2"><?php echo($packs[0]['nomProduit']); ?></h2>
                     <p class="fs-6 mt-4 heroSection__container__carousel__item__info__p "><?php echo($packs[0]['sousTitreProduit']); ?></p>
                   </div> 
-                  <a type="button" href="product?idProduit=<?php echo($packs[0]['idProduit']); ?>" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn  fw-bolder">Acheter Maintenant</a>
+                  <a type="button" href="produit?nomProduit=<?php echo($packs[0]['nomProduit']); ?>" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn  fw-bolder">Acheter Maintenant</a>
                 </div>
               </div>
               <?php if(isset($packs[1]) && isset($packs[2])) { ?>
               <div class="carousel-item h-100   heroSection__container__carousel__item" data-bs-interval="10000">
-                <img  src="<?php echo($packs[1]['imageProduit1']); ?>"  class=" d-block w-100 heroSection__container__carousel__item__img " alt="...">
+                <img  src="<?php echo($packs[1]['imageProduit1']); ?>"  class=" d-block w-100 heroSection__container__carousel__item__img " alt="image: <?php echo($packs[1]['nomProduit']); ?>">
                 <div class=" heroSection__container__carousel__item__info    ">
                   <div class="heroSection__container__carousel__item__info__text ">
                     <h3 class="fs-4 fw-light heroSection__container__carousel__item__info__h3 ">PACK</h3>
                     <h2 class="display-4  fw-bold mt-4 heroSection__container__carousel__item__info__h2"><?php echo($packs[1]['nomProduit']); ?></h2>
                     <p class="fs-6 mt-4 heroSection__container__carousel__item__info__p "><?php echo($packs[1]['sousTitreProduit']); ?></p>
                   </div> 
-                  <a type="button" href="product?idProduit=<?php echo($packs[1]['idProduit']); ?>" class="btn btn-primary btn-lg text-secondary heroSection__container__carousel__item__info__btn fs-5  fw-bolder">Acheter Maintenant</a>
+                  <a type="button" href="produit?nomProduit=<?php echo($packs[1]['nomProduit']); ?>" class="btn btn-primary btn-lg text-secondary heroSection__container__carousel__item__info__btn fs-5  fw-bolder">Acheter Maintenant</a>
                 </div>
               </div>
               <div class="carousel-item h-100   heroSection__container__carousel__item" data-bs-interval="10000">
-                <img  src="<?php echo($packs[2]['imageProduit1']); ?>"  class="object-fit-cover d-block w-100 heroSection__container__carousel__item__img " alt="...">
+                <img  src="<?php echo($packs[2]['imageProduit1']); ?>"  class="object-fit-cover d-block w-100 heroSection__container__carousel__item__img " alt="image: <?php echo($packs[2]['nomProduit']); ?>">
                 <div class=" heroSection__container__carousel__item__info    ">
                   <div class="heroSection__container__carousel__item__info__text ">
                     <h3 class="fs-4 fw-light heroSection__container__carousel__item__info__h3 ">PACK</h3>
                     <h2 class="display-4  fw-bold mt-4 heroSection__container__carousel__item__info__h2"><?php echo($packs[2]['nomProduit']); ?></h2>
                     <p class="fs-6 mt-4 heroSection__container__carousel__item__info__p "><?php echo($packs[2]['sousTitreProduit']); ?></p>
                   </div> 
-                  <a type="button" href="product?idProduit=<?php echo($packs[2]['idProduit']); ?>" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn  fw-bolder">Acheter Maintenant</a>
+                  <a type="button" href="produit?nomProduit=<?php echo($packs[2]['nomProduit']); ?>" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn  fw-bolder">Acheter Maintenant</a>
                 </div>
               </div>
               <?php }  ?>
@@ -364,14 +365,14 @@
         <?php foreach($produitsVedette as $produit){ ?>
         <div class="col-lg-3 col-md-6 col-10 mt-2 ">
           <div class="card border-0 m-auto w-100 ProductsCards" >
-            <a href="product?idProduit=<?php echo($produit['idProduit']); ?>" class="text-decoration-none text-dark">
+            <a href="produit?nomProduit=<?php echo($produit['nomProduit']); ?>" class="text-decoration-none text-dark">
             <div class="ProductsImageContainers">
               <img src="assets/<?php
                     if($produit['etatProduit']=="pack promo"){
                      echo($produit['imageProduit2']);}else{
                       echo($produit['imageProduit1']);
                      } 
-                     ?>"  class="img-fluid card-img-top ProductsImages" alt="...">
+                     ?>"  class="img-fluid card-img-top ProductsImages" alt="image: <?php echo($produit['nomProduit']); ?>">
               <button class="btn btn-primary   rounded-0 btn-lg fw-light text-secondary ProductsImagesBtns">DECOUVRIR</button>
             </div>
             <div class="card-body">
@@ -403,7 +404,7 @@
     <section class="container-fluid text-center mt-5 categoriesSection">
       <div class="row categoriesSection__container">
         <div class="col-lg-6 col-12   p-0 categoriesSection__container__item mt-2 mb-4">
-          <img  src="assets/img/homePage/categoriesSection/haircare.jpg " class="w-100 h-100 reveal" alt="">
+          <img  src="assets/img/homePage/categoriesSection/haircare.jpg " class="w-100 h-100 reveal" alt="image: soin des cheveux">
           <div class="categoriesSection__container__item__info text-secondary reveal">
             <h3 class="categoriesSection__container__item__info__h3 fs-2 fw-lighter   ">Meilleur de</h3>
             <h2 class="categoriesSection__container__item__info__h2 fs-1 fw-bolder ">SOIN DES <br> CHEVEUX</h2>
@@ -411,7 +412,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-12  p-0  categoriesSection__container__item mt-5 ">
-          <img  src="assets/img/homePage/categoriesSection/skincare2.jpg " class="w-100 h-100 reveal" alt="">
+          <img  src="assets/img/homePage/categoriesSection/skincare2.jpg " class="w-100 h-100 reveal" alt="image: soin de la peau">
           <div class="categoriesSection__container__item__info text-secondary reveal ">
             <h3 class="categoriesSection__container__item__info__h3 fs-2 fw-lighter ">Meilleur de</h3>
             <h2 class="categoriesSection__container__item__info__h2 fs-1 fw-bolder ">SOIN DE <br> LA PEAU</h2>
@@ -468,7 +469,7 @@
                     <div class="col-lg-5 col-md-8 col-9 m-auto ">
                       <div class="card text-center h-100">
                         <div class="card-header">
-                          <img src="assets/img/homePage/clientReviewsSection/review1.jpg" class="w-25 rounded-circle " alt="">
+                          <img src="assets/img/homePage/clientReviewsSection/review1.jpg" class="w-25 rounded-circle " alt="image client">
                           <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid m-1 fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i></p>
                         </div>
                         <div class="card-body">
@@ -487,7 +488,7 @@
                     <div class="col-lg-5 col-md-8 col-9 m-auto ">
                       <div class="card text-center  h-100">
                         <div class="card-header">
-                          <img src="assets/img/homePage/clientReviewsSection/review2.jpg" loading="lazy" class="w-25 object-fit-cover  rounded-circle " alt="">
+                          <img src="assets/img/homePage/clientReviewsSection/review2.jpg" loading="lazy" class="w-25 object-fit-cover  rounded-circle " alt="image client">
                           <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid m-1 fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i></p>
                         </div>
                         <div class="card-body">
@@ -507,7 +508,7 @@
                     <div class="col-lg-5 col-md-8 col-9  m-auto">
                       <div class="card text-center  ">
                         <div class="card-header">
-                          <img src="assets/img/homePage/clientReviewsSection/review3.jpg" loading="lazy" class="w-25 rounded-circle " alt="">
+                          <img src="assets/img/homePage/clientReviewsSection/review3.jpg" loading="lazy" class="w-25 rounded-circle " alt="image client">
                           <p class="card-text text-center m-1 "><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid m-1 fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i></p>
                         </div>
                         <div class="card-body">

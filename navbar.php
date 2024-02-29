@@ -73,23 +73,23 @@
  <!--navbar debut-->
  <nav class="navbar navbar-light bg-primary sticky-top  p-0 m-0  ">
         <div class="container-fluid navbar__container m-0 p-0">
-          <a class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <span class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
              <i  class="fa-solid fa-bars-staggered fa-xl navbar__container__icon navbar__icon "></i>
-          </a>
-            <a class="navbar-brand " href="index">
+          </span>
+            <a class="navbar-brand " href=".">
                 <!--Logo image-->
                 <img src="assets/img/logo/svg_white.svg" alt=""  width="160" class="d-inline-block align-text-top">
             </a>
             <div class="navbar__container__options order-lg-2 pe-4 ">
-                <a class="m-1" data-bs-toggle="collapse" href="#collapseExample" type="button" aria-expanded="false" aria-controls="collapseExample">
+                <span class="m-1" data-bs-toggle="collapse" href="#collapseExample" type="button" aria-expanded="false" aria-controls="collapseExample">
                   <i class="fa-solid fa-magnifying-glass fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
-                </a>
+              </span>
                 <?php if(!isset($_SESSION['nomUtulisateur'])){ ?>
-                <a  type="button" data-bs-toggle="modal" data-bs-target="#login">
+                <span  type="button" data-bs-toggle="modal" data-bs-target="#login">
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
-                </a>
+                </span>
                 <?php }else{ ?>
-                <a  class="text-decoration-none m-1 d-none d-lg-inline-block" data-bs-toggle="collapse" href="#userCollapse" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                <span  class="text-decoration-none m-1 d-none d-lg-inline-block" data-bs-toggle="collapse" href="#userCollapse" role="button" aria-expanded="false" aria-controls="collapseExample" >
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons  navbar__icon m-auto" ></i>
                    <span class="fs-6 fw-light text-secon text-secondary"><?php echo($_SESSION['prenomUtulisateur'].' '.$_SESSION['nomUtulisateur']); ?></span>
                    <div class="collapse position-absolute ms-4 " id="userCollapse">
@@ -104,9 +104,9 @@
                       <hr class="m-0 p-0 border-primary ">
                     </div>
                 </div>
-                </a>
+                </span>
                 <?php }?>
-                <a href="cart.php" class="d-inline-block  m-lg-1 m-0   position-relative navbar__container__options__cart  ">
+                <a href="panier" class="d-inline-block  m-lg-1 m-0   position-relative navbar__container__options__cart  ">
                   <span id="cartIconContainer" class="d-inline-block bg-dark rounded-5"></span>
                   <span id="cartIcon" class=" text-center   text-secondary  fs-6 fw-bolder "></span>   
                   <i class="fa-solid fa-cart-shopping fa-lg pointer-event  navbar__container__options__icons navbar__icon " ></i>
@@ -131,9 +131,9 @@
         </div>
         <div class="offcanvas-body offcanvasNavbar__nav m-0 p-0 text-center  mt-5">
           <hr class="m-0 p-0">
-            <a href="index" class="d-block  text-decoration-none pt-3 pb-3 fs-6 offcanvasNavbar__nav__link ">Accueil</a>
+            <a href="." class="d-block  text-decoration-none pt-3 pb-3 fs-6 offcanvasNavbar__nav__link ">Accueil</a>
             <hr class="m-0 p-0">
-            <a href="shop" class="d-block  text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Boutique</a>
+            <a href="boutique" class="d-block  text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Boutique</a>
             <hr class="m-0 p-0">
             <?php if(isset($_SESSION['nomUtulisateur'])){ ?>
               <a href="mes-commandes" class="d-lg-none d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Mes commandes</a>
@@ -143,7 +143,7 @@
             <hr class="m-0 p-0">
             <a href="contact" class="d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Contactez-Nous</a>
             <hr class="m-0 p-0">
-            <a href="about" class="d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">À propos de KenzAtlas</a>
+            <a href="A-Propos" class="d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">À propos de KenzAtlas</a>
             <hr class="m-0 p-0">
             <?php if(isset($_SESSION['nomUtulisateur'])){ ?>
               <a href="signout" class="d-lg-none d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Se déconnecter</a>
@@ -179,7 +179,7 @@
           </div>
           
           <div class="p-1 text-center ">
-            <a href="shop" class="text-decoration-none ">
+            <a href="boutique" class="text-decoration-none ">
               <i class="fa-solid fa-shop fa-xl text-secondary"></i>
               <span class="d-block text-secondary">boutique</span>
             </a>

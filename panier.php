@@ -7,7 +7,7 @@
     $produitsVedette = $produitsVedetteStatement->fetchAll();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TYT83HH22"></script>
@@ -20,7 +20,7 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kenzAtlas</title>
+    <title>Panier</title>
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -83,7 +83,7 @@
               <?php foreach($produitsVedette as $produitVedette){ ?>
               <div class="col-lg-3 col-md-6 col-10 mt-2 ">
                 <div class="card border-0 m-auto w-100 ProductsCards" >
-                  <a href="product?idProduit=<?php echo($produitVedette['idProduit']); ?>" class="text-decoration-none text-dark">
+                  <a href="produit?nomProduit=<?php echo($produitVedette['nomProduit']); ?>" class="text-decoration-none text-dark">
                   <div class="ProductsImageContainers">
                     <img src="assets/<?php
                     if($produitVedette['etatProduit']=="pack promo"){

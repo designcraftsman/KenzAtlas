@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TYT83HH22"></script>
@@ -65,7 +65,7 @@
         </div>
         </div>
         <div class="col-lg-4  col-md-4 col-12 offset-lg-2 offset-md-2 mt-5 offset-0 m-auto contactContainer__image  ">
-          <img src="assets/img/contact/contact.jpg" class="img-fluid contactContainer__image__img " alt="">
+          <img src="assets/img/contact/contact.jpg" class="img-fluid contactContainer__image__img " alt="image: Support de KenzAtlas">
         </div>
       </div>
       <div class="row  border reveal">

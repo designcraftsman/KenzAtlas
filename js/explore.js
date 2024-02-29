@@ -8,23 +8,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     heroSectionButtons.forEach(function(button) {
       button.addEventListener('click', function() {
-        window.location.href = 'shop';
+        window.location.href = 'boutique';
             });
     });
   
     exploreHair.addEventListener('click', function() {
       // Navigate to shop.html
-      window.location.href = 'shop';
+      window.location.href = 'boutique';
     });
     const exploreSkin = document.getElementById('exploreSkin');
   
     exploreSkin.addEventListener('click', function() {
       // Navigate to shop.html
-      window.location.href = 'shop';
+      window.location.href = 'boutique';
     });
   });
 
-  // shop.html
+  // boutique
 
 
 
