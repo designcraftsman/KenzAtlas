@@ -125,7 +125,7 @@
         <div class="offcanvas-header ">
             <!--Logo image-->
             <div class="m-auto ">
-              <img src="assets/img/logo/svg_yellow (1).svg" alt=""  width="180" class="d-inline-block align-text-top">
+              <img src="assets/img/logo/svg_yellow (1).svg" alt="KenzAtlas Logo"  width="180" class="d-inline-block align-text-top">
             </div>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>

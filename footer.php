@@ -4,7 +4,7 @@
       <div class="container p-5">
         <div class="row text-primary d-flex justify-content-between align-items-center  ">
           <div class="col-lg-3 col-md-4 col-12  ">
-            <img src="assets/img/logo/svg_yellow (1).svg"  class="d-block w-100  " alt="">
+            <img src="assets/img/logo/svg_yellow (1).svg"  class="d-block w-100  " alt="KenzAtlas Logo">
             <ul class="list-unstyled text-center text-secondary  mt-4 ">
               <li class="d-inline m-2 "><a class="text-decoration-none socialLinks text-secondary " href="https://www.facebook.com/kenz.atla?sfnsn=wa&mibextid=RUbZ1f"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
               <li class="d-inline m-2 "><a class="text-decoration-none socialLinks text-secondary " href="https://www.instagram.com/kenz.atlas?igsh=MTg2bWVoYjEzbzBhag=="><i class="fa-brands fa-instagram fa-lg"></i></a></li>

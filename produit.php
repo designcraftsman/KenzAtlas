@@ -20,6 +20,34 @@
     $avisStatement->execute();
     $avisGroupe = $avisStatement->fetchAll(PDO::FETCH_ASSOC);
 ?>
+<?php
+                if ((isset($_POST['rate-5']) || isset($_POST['rate-4']) || isset($_POST['rate-3']) || isset($_POST['rate-2']) || isset($_POST['rate-1'])) && isset($_POST['avisUtulisateur'])) {
+                  try {
+                      // Establish a database connection (replace with your actual database configuration)
+                      include('connection.php');
+                      $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                      $avisUtulisateur = $_POST['avisUtulisateur'];
+                      // Assuming you also want to handle user ratings
+                      $rating = isset($_POST['rate-5']) ? 5 :
+                                (isset($_POST['rate-4']) ? 4 :
+                                (isset($_POST['rate-3']) ? 3 :
+                                (isset($_POST['rate-2']) ? 2 :
+                                (isset($_POST['rate-1']) ? 1 : 0))));
+                      // Prepare the SQL query using placeholders
+                      $sqlQuery = "INSERT INTO avis ( nomUtulisateur, prenomUtulisateur, idProduit, commentaireAvis, notation)Values ( :nomUtulisateur, :prenomUtulisateur ,:idProduit, :commentaireAvis, :notation)";
+                      $insertData = $db->prepare($sqlQuery);
+                      $insertData->execute([
+                        'nomUtulisateur' => $_SESSION['nomUtulisateur'],
+                        'prenomUtulisateur' => $_SESSION['prenomUtulisateur'],
+                        'idProduit' => $id,
+                        'commentaireAvis' => $avisUtulisateur,
+                        'notation' => $rating,
+                    ]);
+                    } catch (PDOException $e) {
+                      echo 'An error occurred: ' . $e->getMessage();
+                  }
+              }
+              ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -188,33 +216,7 @@
                   <?php } ?>
             </form>
             <hr class="border-primary border-3">
-            <?php
-                if ((isset($_POST['rate-5']) || isset($_POST['rate-4']) || isset($_POST['rate-3']) || isset($_POST['rate-2']) || isset($_POST['rate-1'])) && isset($_POST['avisUtulisateur'])) {
-                  try {
-                      // Establish a database connection (replace with your actual database configuration)
-                      include('connection.php');
-                      $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                      $avisUtulisateur = $_POST['avisUtulisateur'];
-                      // Assuming you also want to handle user ratings
-                      $rating = isset($_POST['rate-5']) ? 5 :
-                                (isset($_POST['rate-4']) ? 4 :
-                                (isset($_POST['rate-3']) ? 3 :
-                                (isset($_POST['rate-2']) ? 2 :
-                                (isset($_POST['rate-1']) ? 1 : 0))));
-                      // Prepare the SQL query using placeholders
-                      $sqlQuery = "INSERT INTO avis ( nomUtulisateur, prenomUtulisateur, idProduit, commentaireAvis, notation)Values ( :nomUtulisateur, :prenomUtulisateur ,:idProduit, :commentaireAvis, :notation)";
-                      $insertData = $db->prepare($sqlQuery);
-                      $insertData->execute([
-                        'nomUtulisateur' => $_SESSION['nomUtulisateur'],
-                        'prenomUtulisateur' => $_SESSION['prenomUtulisateur'],
-                        'idProduit' => $id,
-                        'commentaireAvis' => $avisUtulisateur,
-                        'notation' => $rating,
-                    ]);
-                    } catch (PDOException $e) {
-                      echo 'An error occurred: ' . $e->getMessage();
-                  }
-              }
+              <?php
               if(count($avisGroupe) <= 0){
                   ?> <p class="fs-5 mt-5 fw-lighter  text-center">Aucun avis</p>  <?php
               }else{

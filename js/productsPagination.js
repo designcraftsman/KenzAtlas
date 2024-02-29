@@ -54,8 +54,7 @@ function displayData(data, sortingOption) {
   const currentPageData = sortedData.slice(startIndex, endIndex);
   const currentPageHTML = currentPageData.map(product => {
     return `
-      <div class="col-lg-5 col-md-6 col-10 m-auto product mt-4 shop__container__products__list__product">
-        <div class="card border-0 m-auto w-100">
+        <article class="card border-0 m-auto  col-lg-5 col-md-6 col-10 m-auto product mt-4 shop__container__products__list__product">
           <a href="produit?nomProduit=${product.title}" class="text-decoration-none text-dark">
             <div class="ProductsImageContainers">
               <img src="${product.image}" class="img-fluid card-img-top ProductsImages shop__container__products__list__product__img object-fit-cover" alt="image: ${product.title}">
@@ -73,8 +72,7 @@ function displayData(data, sortingOption) {
               </p>
             </div>
           </a>
-        </div>
-      </div>
+        </article>
     `;
   }).join('');
 

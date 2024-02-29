@@ -315,7 +315,7 @@
             </div>
             <?php }?>
             <div class="carousel-inner active heroSection__container__carousel">
-              <div class="carousel-item h-100  active heroSection__container__carousel__item" data-bs-interval="10000">
+              <article class="carousel-item h-100  active heroSection__container__carousel__item" data-bs-interval="10000">
                 <img  src="assets/<?php echo($packs[0]['imageProduit1']); ?>"  class="  d-block w-100 heroSection__container__carousel__item__img " alt="image: <?php echo($packs[0]['nomProduit']); ?>">
                 <div class=" heroSection__container__carousel__item__info    ">
                   <div class="heroSection__container__carousel__item__info__text ">
@@ -325,9 +325,9 @@
                   </div> 
                   <a type="button" href="produit?nomProduit=<?php echo($packs[0]['nomProduit']); ?>" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn  fw-bolder">Acheter Maintenant</a>
                 </div>
-              </div>
+            </article>
               <?php if(isset($packs[1]) && isset($packs[2])) { ?>
-              <div class="carousel-item h-100   heroSection__container__carousel__item" data-bs-interval="10000">
+              <article class="carousel-item h-100   heroSection__container__carousel__item" data-bs-interval="10000">
                 <img  src="<?php echo($packs[1]['imageProduit1']); ?>"  class=" d-block w-100 heroSection__container__carousel__item__img " alt="image: <?php echo($packs[1]['nomProduit']); ?>">
                 <div class=" heroSection__container__carousel__item__info    ">
                   <div class="heroSection__container__carousel__item__info__text ">
@@ -337,8 +337,8 @@
                   </div> 
                   <a type="button" href="produit?nomProduit=<?php echo($packs[1]['nomProduit']); ?>" class="btn btn-primary btn-lg text-secondary heroSection__container__carousel__item__info__btn fs-5  fw-bolder">Acheter Maintenant</a>
                 </div>
-              </div>
-              <div class="carousel-item h-100   heroSection__container__carousel__item" data-bs-interval="10000">
+              </article>
+              <article class="carousel-item h-100   heroSection__container__carousel__item" data-bs-interval="10000">
                 <img  src="<?php echo($packs[2]['imageProduit1']); ?>"  class="object-fit-cover d-block w-100 heroSection__container__carousel__item__img " alt="image: <?php echo($packs[2]['nomProduit']); ?>">
                 <div class=" heroSection__container__carousel__item__info    ">
                   <div class="heroSection__container__carousel__item__info__text ">
@@ -348,7 +348,7 @@
                   </div> 
                   <a type="button" href="produit?nomProduit=<?php echo($packs[2]['nomProduit']); ?>" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn  fw-bolder">Acheter Maintenant</a>
                 </div>
-              </div>
+              </article>
               <?php }  ?>
             </div>
           </div>
@@ -360,11 +360,10 @@
     <!--featured products section start -->
     <section class="container featuredProducts mt-5 ">
       <h2 class="featuredProducts__title fs-1 text-center reveal">Nos produits vedettes</h2>
-      <h4 class="featuredProducts__subTitle fs-4 fw-lighter text-center reveal ">Obtenez la peau que vous désirez</h4>
+      <h3 class="featuredProducts__subTitle fs-4 fw-lighter text-center reveal ">Obtenez la peau que vous désirez</h3>
       <div class="row d-flex featuredProducts__products justify-content-center align-content-center  mt-5  reveal">
         <?php foreach($produitsVedette as $produit){ ?>
-        <div class="col-lg-3 col-md-6 col-10 mt-2 ">
-          <div class="card border-0 m-auto w-100 ProductsCards" >
+          <article class="card border-0 m-auto  ProductsCards col-lg-3 col-md-6 col-10 mt-2" >
             <a href="produit?nomProduit=<?php echo($produit['nomProduit']); ?>" class="text-decoration-none text-dark">
             <div class="ProductsImageContainers">
               <img src="assets/<?php
@@ -389,8 +388,8 @@
               </p>
             </div>
             </a>
-          </div>
-        </div>
+            </article>
+                
         <?php } ?>
        
       </div>
@@ -464,7 +463,7 @@
           <div class="col-lg-8 col-12 clientReviewSection__container__screenshots p-5 m-auto ">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner ">
-                <div class="carousel-item active" data-bs-interval="10000">
+                <article class="carousel-item active" data-bs-interval="10000">
                   <div class="row">
                     <div class="col-lg-5 col-md-8 col-9 m-auto ">
                       <div class="card text-center h-100">
@@ -482,8 +481,8 @@
                     </div>
                    
                   </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
+                </article>
+                <article class="carousel-item" data-bs-interval="2000">
                   <div class="row">
                     <div class="col-lg-5 col-md-8 col-9 m-auto ">
                       <div class="card text-center  h-100">
@@ -502,8 +501,8 @@
                     </div>
                    
                   </div>
-                </div>
-                <div class="carousel-item">
+                </article>
+                <article class="carousel-item">
                   <div class="row  ">
                     <div class="col-lg-5 col-md-8 col-9  m-auto">
                       <div class="card text-center  ">
@@ -522,7 +521,7 @@
                     </div>
                    
                   </div>
-                </div>
+                </article>
               </div>
               <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon " aria-hidden="true"></span>
@@ -552,7 +551,7 @@
       </div>
       <div class="row  mt-5 reveal ">
         <?php foreach($articles as $article){ ?>
-        <div class="col-lg-3 col-md-6 col-12 mt-2 blogSection__container m-auto ">
+        <article class="col-lg-3 col-md-6 col-12 mt-2 blogSection__container m-auto ">
           <div class="card border-0 m-auto blogSection__container__item w-100" >
             <img loading="lazy" src="<?php echo($article['imgArticle']); ?>" class="card-img-top object-fit-cover" alt="...">
             <div class="card-body ">
@@ -561,7 +560,7 @@
               <a href="article?idArticle=<?php echo($article['idArticle']); ?>" class="btn  btn-dark border-1 border-dark PostsButtons">En savoir plus</a>
             </div>
           </div>
-        </div>
+        </article>
         <?php } ?>
       </div>
     </section>
