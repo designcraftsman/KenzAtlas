@@ -81,9 +81,9 @@
         <div class="col-lg-4 col-md-4 col-12 m-auto p-3">
           <h3 class="fs-4 text-center fw-light ">Suivez nous :</h3>
           <ul class="list-unstyled text-center text-secondary  mt-4 ">
-            <li class="d-inline m-3 "><a class="text-decoration-none socialLinks  text-dark  " href="https://www.facebook.com/kenz.atla?sfnsn=wa&mibextid=RUbZ1f"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
-            <li class="d-inline m-3 "><a class="text-decoration-none socialLinks text-dark  " href="https://www.instagram.com/kenz.atlas?igsh=MTg2bWVoYjEzbzBhag=="><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-            <li class="d-inline m-3 "><a class="text-decoration-none socialLinks text-dark  " href="https://www.tiktok.com/@kenzatlaspro?_t=8jMB8zQPPWf&_r=1"><i class="fa-brands fa-tiktok fa-2xl"></i></a></li>
+            <li class="d-inline m-3 "><a class="text-decoration-none socialLinks  text-dark  " href="https://www.facebook.com/kenz.atla?sfnsn=wa&mibextid=RUbZ1f" title="Visiter la page Facebook de KenzAtlas "><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+            <li class="d-inline m-3 "><a class="text-decoration-none socialLinks text-dark  " href="https://www.instagram.com/kenz.atlas?igsh=MTg2bWVoYjEzbzBhag==" title="Visiter la page Instagram de KenzAtlas "><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+            <li class="d-inline m-3 "><a class="text-decoration-none socialLinks text-dark  " href="https://www.tiktok.com/@kenzatlaspro?_t=8jMB8zQPPWf&_r=1" title="Visiter la page TikTok de KenzAtlas "><i class="fa-brands fa-tiktok fa-2xl"></i></a></li>
           </ul>
         </div>
       </div>

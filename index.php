@@ -34,8 +34,9 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KenzAtlas est une marque de cosmétiques 100% marocaine qui puise son inspiration dans la richesse naturelle et culturelle du Maroc.Notre mission chez KenzAtlas est de sublimer la beauté naturelle de chacun en proposant une gamme de produits de beauté exclusivement composés d'ingrédients naturels d'exception tel que l’argile, henné, et safran." />
+    <meta name="description" content="  " />
     <title>KenzAtlas</title>
+    <link rel="canonical" href="https://kenzatlas.com" />
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -197,10 +198,10 @@
             <?php } ?>
           <div class="offcanvas-footer mt-5">
             <ul class="list-unstyled text-center ">
-              <li class="d-inline m-2 "><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://www.facebook.com/kenz.atla?sfnsn=wa&mibextid=RUbZ1f"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
-              <li class="d-inline m-2 "><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://www.instagram.com/kenz.atlas?igsh=MTg2bWVoYjEzbzBhag=="><i class="fa-brands fa-instagram fa-lg"></i></a></li>
-              <li class="d-inline m-2"><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://www.tiktok.com/@kenzatlaspro?_t=8jMB8zQPPWf&_r=1"><i class="fa-brands fa-tiktok fa-lg"></i></a></li>
-              <li class="d-inline m-2"><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://wa.me/+212684822768"><i class="fa-brands fa-whatsapp fa-lg"></i></a></li>
+              <li class="d-inline m-2 "><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://www.facebook.com/kenz.atla?sfnsn=wa&mibextid=RUbZ1f" title="Visiter la page Facebook de KenzAtlas "><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+              <li class="d-inline m-2 "><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://www.instagram.com/kenz.atlas?igsh=MTg2bWVoYjEzbzBhag==" title="Visiter la page Instagram de KenzAtlas "><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+              <li class="d-inline m-2"><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://www.tiktok.com/@kenzatlaspro?_t=8jMB8zQPPWf&_r=1" title="Visiter la page Tiktok de KenzAtlas "><i class="fa-brands fa-tiktok fa-lg"></i></a></li>
+              <li class="d-inline m-2"><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://wa.me/+212684822768" title="Ouvrir le chat whatssap avec KenzAtlas "><i class="fa-brands fa-whatsapp fa-lg"></i></a></li>
             </ul>
           </div>
           <p class="text-center fw-lighter mt-5  ">© 2023 DesignCraftsMan Tous droits réservés.</p>
@@ -212,12 +213,12 @@
         <div class="w-100  p-1 d-flex  justify-content-between align-items-center  ">
           <div class="p-1 text-center">
             <?php if(!isset($_SESSION['nomUtulisateur'])){  ?>
-            <a type="button" data-bs-toggle="modal" data-bs-target="#login"  class="text-decoration-none ">
+            <span type="button" data-bs-toggle="modal" data-bs-target="#login"  class="text-decoration-none ">
               <i class="fa-solid fa-user fa-xl navbar__container__options__icons text-secondary " ></i>
               <span class="d-block text-secondary ">Se connecter</span>
-            </a>
+            </span>
             <?php }else{ ?>
-              <a type="button" href="user" class="text-decoration-none ">
+            <a type="button" href="user" class="text-decoration-none ">
               <i class="fa-solid fa-user fa-xl navbar__container__options__icons text-secondary " ></i>
               <span class="d-block text-secondary ">Mon compte</span>
             </a>
@@ -231,10 +232,10 @@
             </a>
           </div>
           <div class="p-1 text-center ">
-            <a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <span  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
               <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons text-secondary" ></i>
               <span  class="d-block text-secondary">Rechercher</span>
-            </a>
+            </span>
           </div>
           
         </div>
@@ -263,7 +264,7 @@
                 ?>
                 <button type="submit" class=" btn btn-primary w-100 m-auto registerLoginBtns mt-3 text-secondary fs-5 border-0 rounded fw-bolder ">Se connecter</button>
             </form>
-            <p class="text-center fs-6 mt-4">Vous n'avez pas un compte? <a type="button" class="text-primary " data-bs-target="#Register" data-bs-toggle="modal" data-bs-dismiss="modal">Créer un compte.</a></p>
+            <p class="text-center fs-6 mt-4">Vous n'avez pas un compte? <span type="button" class="text-primary text-decoration-underline " data-bs-target="#Register" data-bs-toggle="modal" data-bs-dismiss="modal">Créer un compte.</span></p>
          </div>
         </div>
       </div>
@@ -291,7 +292,7 @@
               </div>
               <button type="submit" class=" btn btn-primary w-100 m-auto registerLoginBtns  mt-3 text-secondary fs-5 border-0 rounded fw-bolder ">Créer compte</button>
           </form>
-          <p class="text-center fs-6 mt-4">Vous avez déjà un compte? <a class="text-primary " type="button" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">Se connecter</a></p>
+          <p class="text-center fs-6 mt-4">Vous avez déjà un compte? <span class="text-primary text-decoration-underline " type="button" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">Se connecter</span></p>
           </div>
         </div>
       </div>
