@@ -123,9 +123,12 @@
           <span class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
              <i  class="fa-solid fa-bars-staggered fa-xl navbar__container__icon navbar__icon "></i>
               </span>
-            <a class="navbar-brand " href=".">
+            <a class="navbar-brand " href="." title="Acceuil">
                 <!--Logo image-->
-                <img src="assets/img/logo/svg_white.svg" alt="KenzAtlas-Logo"  width="160" class="d-inline-block align-text-top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="70" viewBox="0 0 400 200" class="d-inline-block align-text-top">
+                  <image href="assets/img/logo/svg_white.svg" width="400" height="200" alt="KenzAtlas-Logo" />
+                </svg>
+
             </a>
             <div class="navbar__container__options order-lg-2 pe-4 ">
                 <span class="m-1" data-bs-toggle="collapse" href="#collapseExample" type="button" aria-expanded="false" aria-controls="collapseExample">
@@ -172,7 +175,7 @@
         <div class="offcanvas-header ">
             <!--Logo image-->
             <div class="m-auto ">
-              <img src="assets/img/logo/svg_yellow (1).svg" alt="KenzAtlas-Logo"  width="180" class="d-inline-block align-text-top">
+              <img loading="lazy"  src="assets/img/logo/svg_yellow (1).svg" alt="KenzAtlas-Logo"  width="180" class="d-inline-block align-text-top">
             </div>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
