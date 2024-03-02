@@ -34,12 +34,12 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="  " />
+    <meta name="description" content=" KenzAtlas est une marque de cosmétiques 100% marocaine qui puise son inspiration dans la richesse naturelle et culturelle du Maroc. " />
     <title>KenzAtlas</title>
     <link rel="canonical" href="https://kenzatlas.com" />
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
-    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <!-- Load the main CSS file asynchronously -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
@@ -142,6 +142,7 @@
                 <?php }else{ ?>
                 <span class="text-decoration-none m-1 d-none d-lg-inline-block " data-bs-toggle="collapse" href="#userCollapse" role="button" aria-expanded="false" aria-controls="collapseExample" >
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons  navbar__icon m-auto" ></i>
+                  
                    <span class="fs-6 fw-light text-secon text-secondary"><?php echo($_SESSION['prenomUtulisateur'].' '.$_SESSION['nomUtulisateur']); ?></span>
                    <div class="collapse position-absolute ms-4 " id="userCollapse">
                     <div class="card card-body   fs-6 fw-normal p-0 ">
