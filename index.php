@@ -34,6 +34,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <meta name="description" content=" KenzAtlas est une marque de cosmétiques 100% marocaine qui puise son inspiration dans la richesse naturelle et culturelle du Maroc. " />
     <title>KenzAtlas</title>
     <link rel="canonical" href="https://kenzatlas.com" />

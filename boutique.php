@@ -20,8 +20,10 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Découvrez la boutique en ligne Kenzatlas. Explorez notre gamme variée de produits alliant ingrédients naturels et innovation, conçus pour sublimer votre beauté naturelle. De nos soins de la peau luxueux à nos collections de maquillage élégantes, chaque article incarne notre engagement envers la qualité et le bien-être. Plongez dans un univers où la nature rencontre la science, où chaque produit est méticuleusement formulé pour répondre à vos besoins. Trouvez l'inspiration pour votre routine beauté chez Kenzatlas, où la beauté naturelle est célébrée avec passion." />
-    <title>kenzAtlas-Boutique</title>
+    <title>KenzAtlas-Boutique</title>
+    <link rel="canonical" href="https://kenzatlas.com/boutique" />
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />

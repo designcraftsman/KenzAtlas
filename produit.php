@@ -62,6 +62,7 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="<?php echo($produit['nomProduit'].'.'.$produit['descriptionProduit']); ?>" />
     <title><?php echo($produit['nomProduit']) ?></title>
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
