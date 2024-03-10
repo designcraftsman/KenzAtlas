@@ -40,7 +40,7 @@
     <link rel="canonical" href="https://kenzatlas.com" />
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
     <!-- Load the main CSS file asynchronously -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
@@ -120,14 +120,14 @@
             ?> 
  
  <!--navbar debut-->
- <nav class="navbar navbar-light bg-primary fixed-top  p-0 m-0  ">
+ <header class="navbar navbar-light bg-primary fixed-top  p-0 m-0  " role="banner"> 
         <div class="container-fluid navbar__container m-0 p-0">
           <span class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
              <i  class="fa-solid fa-bars-staggered fa-xl navbar__container__icon navbar__icon "></i>
               </span>
             <a class="navbar-brand " href="." title="Acceuil">
                 <!--Logo image-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="70" viewBox="0 0 400 200" class="d-inline-block align-text-top">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" width="180" height="70" viewBox="0 0 400 200" class="d-inline-block align-text-top">
                   <image href="assets/img/logo/svg_white.svg" width="400" height="200" alt="KenzAtlas-Logo" />
                 </svg>
 
@@ -184,6 +184,7 @@
         </div>
         <div class="offcanvas-body offcanvasNavbar__nav m-0 p-0 text-center  mt-5">
           <hr class="m-0 p-0">
+          <nav aria-label="Main navigation">
             <a href="." class="d-block  text-decoration-none pt-3 pb-3 fs-6 offcanvasNavbar__nav__link ">Accueil</a>
             <hr class="m-0 p-0">
             <a href="boutique" class="d-block  text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Boutique</a>
@@ -202,6 +203,7 @@
               <a href="signout" class="d-lg-none d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Se déconnecter</a>
               <hr class="m-0 p-0">
             <?php } ?>
+          </nav>
           <div class="offcanvas-footer mt-5">
             <ul class="list-unstyled text-center ">
               <li class="d-inline m-2 "><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://www.facebook.com/kenz.atla?sfnsn=wa&mibextid=RUbZ1f" title="Visiter la page Facebook de KenzAtlas "><i class="fa-brands fa-facebook fa-lg"></i></a></li>
@@ -209,11 +211,17 @@
               <li class="d-inline m-2"><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://www.tiktok.com/@kenzatlaspro?_t=8jMB8zQPPWf&_r=1" title="Visiter la page Tiktok de KenzAtlas "><i class="fa-brands fa-tiktok fa-lg"></i></a></li>
               <li class="d-inline m-2"><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://wa.me/+212684822768" title="Ouvrir le chat whatssap avec KenzAtlas "><i class="fa-brands fa-whatsapp fa-lg"></i></a></li>
             </ul>
+            <p class="text-center fw-lighter mt-5  ">© 2023 DesignCraftsMan Tous droits réservés.</p>
           </div>
-          <p class="text-center fw-lighter mt-5  ">© 2023 DesignCraftsMan Tous droits réservés.</p>
+          
         </div>
-      </div>
-    </nav>
+            </div>
+</header>
+
+
+<!-- Mobile navbar -->
+
+
     <nav class="navbar fixed-bottom  navbar-light bg-primary  d-lg-none ">
       <div class="container-fluid  w-100 ">
         <div class="w-100  p-1 d-flex  justify-content-between align-items-center  ">
@@ -238,7 +246,7 @@
             </a>
           </div>
           <div class="p-1 text-center ">
-            <span  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <span  data-bs-toggle="collapse" href="#collapseExample" role="search" aria-expanded="false" aria-controls="collapseExample">
               <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons text-secondary" ></i>
               <span  class="d-block text-secondary">Rechercher</span>
             </span>
@@ -312,6 +320,7 @@
 
 
     <!--hero section debut-->
+<main>
     <section class="heroSection">
         <div id="carouselExampleDark" class="carousel carousel-dark slide heroSection__container  " data-bs-ride="carousel">
             <?php if(isset($packs[1]) && isset($packs[2])) { ?>
@@ -573,6 +582,7 @@
     </section>
 
     <!--blog section end-->
+</main>
 
     <!--footer start -->
 
@@ -581,10 +591,10 @@
 
     <!-- footer end -->
 
-    <script src="js/explore.js"></script>
-    <script src="js/scrollReveal.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/searchBar.js"></script>
+    <script  src="js/explore.js"></script>
+    <script  src="js/scrollReveal.js"></script>
+    <script  src="js/cart.js"></script>
+    <script  src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script  src="js/searchBar.js"></script>
 </body>
 </html>

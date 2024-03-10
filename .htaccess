@@ -1,4 +1,7 @@
-    RewriteEngine On
+AddOutputFilterByType DEFLATE  text/css text/plain  application/x-javascript application/x-httpd-php
+   
+   
+   RewriteEngine On
 
     # If the requested URL is not a file or directory
     RewriteCond %{REQUEST_FILENAME} !-f
@@ -10,5 +13,7 @@
     # Add this rule to handle URLs with query parameters
     RewriteCond %{QUERY_STRING} !=""
 RewriteRule ^blog$ blog.php [NC,L]
+
+
 
     

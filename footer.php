@@ -1,8 +1,8 @@
 <!-- footer start-->
 
-<footer class="container-fluid  bg-dark pb-lg-0 pb-5"> 
+<footer class="container-fluid  bg-dark pb-lg-0 pb-5" role="contentinfo"> 
       <div class="container p-5">
-        <div class="row text-primary d-flex justify-content-between align-items-center  ">
+        <nav class="row text-primary d-flex justify-content-between align-items-center  " role="footer navigation">
           <div class="col-lg-3 col-md-4 col-12  ">
             <img src="assets/img/logo/svg_yellow (1).svg"  class="d-block w-100  " alt="KenzAtlas Logo">
             <ul class="list-unstyled text-center text-secondary  mt-4 ">
@@ -26,7 +26,7 @@
                 <li class="fs-6"><a href="Politique-de-Confidentialite" class="text-decoration-none   footer-links">Politique de confidentialité</a></li>
               </ul>
           </div>
-        </div>
+</nav>
         <hr class="border-primary border-3  text-center mt-3">
         <p class="text-center text-secondary fs-6 opacity-75 ">© 2023 DesignCraftsMan Tous droits réservés.</p>
       </div>

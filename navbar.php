@@ -71,14 +71,14 @@
             ?> 
  
  <!--navbar debut-->
- <nav class="navbar navbar-light bg-primary sticky-top  p-0 m-0  ">
+ <header class="navbar navbar-light bg-primary sticky-top  p-0 m-0  ">
         <div class="container-fluid navbar__container m-0 p-0">
           <span class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
              <i  class="fa-solid fa-bars-staggered fa-xl navbar__container__icon navbar__icon "></i>
           </span>
             <a class="navbar-brand " href="." title="Acceuil">
                 <!--Logo image-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="70" viewBox="0 0 400 200" class="d-inline-block align-text-top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="180" role="img" height="70" viewBox="0 0 400 200" class="d-inline-block align-text-top">
                   <image href="assets/img/logo/svg_white.svg" width="400" height="200" alt="KenzAtlas-Logo" />
                 </svg>
             </a>
@@ -133,6 +133,7 @@
         </div>
         <div class="offcanvas-body offcanvasNavbar__nav m-0 p-0 text-center  mt-5">
           <hr class="m-0 p-0">
+          <nav>
             <a href="." class="d-block  text-decoration-none pt-3 pb-3 fs-6 offcanvasNavbar__nav__link ">Accueil</a>
             <hr class="m-0 p-0">
             <a href="boutique" class="d-block  text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Boutique</a>
@@ -151,6 +152,7 @@
               <a href="signout" class="d-lg-none d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Se déconnecter</a>
               <hr class="m-0 p-0">
             <?php } ?>
+          </nav>
           <div class="offcanvas-footer mt-5">
             <ul class="list-unstyled text-center ">
             <li class="d-inline m-2 "><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="https://www.facebook.com/kenz.atla?sfnsn=wa&mibextid=RUbZ1f" title="Visiter la page Facebook de KenzAtlas "><i class="fa-brands fa-facebook fa-lg"></i></a></li>
@@ -180,22 +182,19 @@
             <?php } ?>
           </div>
           
-          <div class="p-1 text-center ">
+          <div class="p-1 text-center " role="navigation">
             <a href="boutique" class="text-decoration-none ">
               <i class="fa-solid fa-shop fa-xl text-secondary"></i>
               <span class="d-block text-secondary">boutique</span>
             </a>
           </div>
-          <div class="p-1 text-center ">
-            <span  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div class="p-1 text-center "  data-bs-toggle="collapse" href="#collapseExample" role="search" aria-expanded="false" aria-controls="collapseExample">
               <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons text-secondary" ></i>
               <span  class="d-block text-secondary">Rechercher</span>
-            </span>
-          </div>
-          
+            </div>
         </div>
       </div>
-    </nav>
+    </header>
     <!--navbar end-->
 
 

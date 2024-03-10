@@ -34,7 +34,7 @@
     <meta name="description" content="Explorez nos articles soigneusement sélectionnés qui vous guideront à travers un voyage enrichissant, des secrets de soins capillaires aux bienfaits des produits naturels, en passant par les tendances du moment. Que vous recherchiez des conseils pour prendre soin de votre peau, des recettes de masques maison, ou des informations sur les dernières innovations en matière de beauté, notre blog est là pour vous inspirer et vous informer." />
     <title>KenzAtlas-Blog</title>
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
