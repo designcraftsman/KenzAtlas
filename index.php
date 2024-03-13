@@ -122,9 +122,9 @@
  <!--navbar debut-->
  <header class="navbar navbar-light bg-primary fixed-top  p-0 m-0  " role="banner"> 
         <div class="container-fluid navbar__container m-0 p-0">
-          <span class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-             <i  class="fa-solid fa-bars-staggered fa-xl navbar__container__icon navbar__icon "></i>
-              </span>
+            <span class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavigation" aria-controls="offcanvasNavigation" aria-label="toggleNavigation">
+              <i  class="fa-solid fa-bars-staggered fa-xl navbar__container__icon navbar__icon "></i>
+            </span>
             <a class="navbar-brand " href="." title="Acceuil">
                 <!--Logo image-->
                 <svg xmlns="http://www.w3.org/2000/svg" role="img" width="180" height="70" viewBox="0 0 400 200" class="d-inline-block align-text-top">
@@ -174,7 +174,7 @@
                 </form>
             </div>
             </div>
-       <div class="offcanvas offcanvas-start offcanvasNavbar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+       <div class="offcanvas offcanvas-start offcanvasNavbar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavigation" aria-labelledby="offcanvasNavigation">
         <div class="offcanvas-header ">
             <!--Logo image-->
             <div class="m-auto ">

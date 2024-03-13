@@ -73,7 +73,7 @@
  <!--navbar debut-->
  <header class="navbar navbar-light bg-primary sticky-top  p-0 m-0  ">
         <div class="container-fluid navbar__container m-0 p-0">
-          <span class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <span class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavigation" aria-controls="offcanvasNavigation" aria-label="ToggleNavigation">
              <i  class="fa-solid fa-bars-staggered fa-xl navbar__container__icon navbar__icon "></i>
           </span>
             <a class="navbar-brand " href="." title="Acceuil">
@@ -123,7 +123,7 @@
                 </form>
             </div>
             </div>
-       <div class="offcanvas offcanvas-start offcanvasNavbar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+       <div class="offcanvas offcanvas-start offcanvasNavbar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavigation" aria-labelledby="offcanvasNavigation">
         <div class="offcanvas-header ">
             <!--Logo image-->
             <div class="m-auto ">
