@@ -26,7 +26,7 @@
 
 <!--navbar end-->
 
-    <div class="container   contactContainer mb-5 ">
+    <main class="container   contactContainer mb-5 ">
       <div class="row p-5 align-items-center ">
         <div class="col-lg-6 col-md-6 col-12">
           <h1 class="display-4    fw-bolder  mt-5  contactContainer__title">Contactez-Nous</h1>
@@ -88,7 +88,7 @@
           </ul>
         </div>
       </div>
-    </div>
+                </main>
 
 
 

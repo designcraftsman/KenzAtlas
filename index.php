@@ -127,21 +127,21 @@
             </span>
             <a class="navbar-brand " href="." title="Acceuil">
                 <!--Logo image-->
-                <svg xmlns="http://www.w3.org/2000/svg" role="img" width="180" height="70" viewBox="0 0 400 200" class="d-inline-block align-text-top">
-                  <image href="assets/img/logo/svg_white.svg" width="400" height="200" alt="KenzAtlas-Logo" />
+                <svg xmlns="http://www.w3.org/2000/svg" aria-label="kenzatlasLogo" role="img" width="180" height="70" viewBox="0 0 400 200" class="d-inline-block align-text-top">
+                  <image href="assets/img/logo/svg_white.svg" width="400" height="200"  />
                 </svg>
 
             </a>
             <div class="navbar__container__options order-lg-2 pe-4 ">
-                <span class="m-1" data-bs-toggle="collapse" href="#collapseExample" type="button" aria-expanded="false" aria-controls="collapseExample">
+              <span class="m-1" data-bs-toggle="collapse" href="#collapseExample" type="button" aria-expanded="false" aria-label="toggleSearch" aria-controls="collapseSearch">
                   <i class="fa-solid fa-magnifying-glass fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
               </span>
                 <?php if(!isset($_SESSION['nomUtulisateur'])){ ?>
-                <span  type="button" data-bs-toggle="modal" data-bs-target="#login">
+                <span  type="button" data-bs-toggle="modal" data-bs-target="#login" aria-label="toggleLogin" aria-controls="loginForm">
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
                 </span>
                 <?php }else{ ?>
-                <span class="text-decoration-none m-1 d-none d-lg-inline-block " data-bs-toggle="collapse" href="#userCollapse" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                <span class="text-decoration-none m-1 d-none d-lg-inline-block " data-bs-toggle="collapse" href="#userCollapse" role="button" aria-expanded="false" aria-label="userMenuToggle" aria-controls="userCollapse" >
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons  navbar__icon m-auto" ></i>
                   
                    <span class="fs-6 fw-light text-secon text-secondary"><?php echo($_SESSION['prenomUtulisateur'].' '.$_SESSION['nomUtulisateur']); ?></span>
@@ -156,17 +156,17 @@
                       <a  href="signout" class="d-block text-dark mb-2 text-decoration-none p-1"><i class="fa-solid fa-right-from-bracket m-2"></i>  Deconnexion</a>
                       <hr class="m-0 p-0 border-primary ">
                     </div>
-                </div>
+                  </div>
                 </span>
                 <?php }?>
-                <a href="panier" class="d-inline-block  m-lg-1 m-0   position-relative navbar__container__options__cart  ">
+                <a href="panier" class="d-inline-block  m-lg-1 m-0   position-relative navbar__container__options__cart  " aria-label="cartPage" >
                   <span id="cartIconContainer" class="d-inline-block bg-dark rounded-5"></span>
                   <span id="cartIcon" class=" text-center   text-secondary  fs-6 fw-bolder "></span>   
                   <i class="fa-solid fa-cart-shopping fa-lg pointer-event  navbar__container__options__icons navbar__icon " ></i>
                 </a>
             </div>
           </div>
-            <div class="collapse w-100" id="collapseExample">
+            <div class="collapse w-100" id="collapseSearch">
               <div class="card card-body bg-primary border-0  ">
                 <form class="row " id="searchForm" onsubmit="filterProducts(event)">
                   <input id="searchInput" type="text" class="col-lg-9 col-md-8 col-12 m-auto rounded border-1   p-2 d-inline " placeholder="Rechercher un produit" required>
