@@ -133,9 +133,9 @@
 
             </a>
             <div class="navbar__container__options order-lg-2 pe-4 ">
-              <span class="m-1" data-bs-toggle="collapse" href="#collapseExample" type="button" aria-expanded="false" aria-label="toggleSearch" aria-controls="collapseSearch">
+              <a class="m-1" data-bs-toggle="collapse" href="#collapseSearch" type="button" aria-expanded="false" aria-label="toggleSearch" aria-controls="collapseSearch">
                   <i class="fa-solid fa-magnifying-glass fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
-              </span>
+              </a>
                 <?php if(!isset($_SESSION['nomUtulisateur'])){ ?>
                 <span  type="button" data-bs-toggle="modal" data-bs-target="#login" aria-label="toggle login" aria-controls="loginForm">
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
@@ -246,10 +246,10 @@
             </a>
           </div>
           <div class="p-1 text-center ">
-            <span  data-bs-toggle="collapse" href="#collapseExample" role="search" aria-expanded="false" aria-controls="collapseExample">
+            <a  data-bs-toggle="collapse" href="#collapseSearch" role="button" aria-expanded="false" aria-controls="collapseExample">
               <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons text-secondary" ></i>
               <span  class="d-block text-secondary">Rechercher</span>
-            </span>
+            </a>
           </div>
           
         </div>

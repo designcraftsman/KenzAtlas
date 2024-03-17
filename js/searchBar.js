@@ -7,7 +7,7 @@ function filterProducts(event) {
     var searchTerm = searchInput.value.trim().toLowerCase();
 
     // Redirect to the target page with the search query as a parameter
-    window.location.href = "shop?search=" + encodeURIComponent(searchTerm);
+    window.location.href = "boutique?search=" + encodeURIComponent(searchTerm);
 }
 
 

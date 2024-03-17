@@ -1,10 +1,18 @@
 <?php session_start(); ?>
 <?php require_once('connection.php'); ?>
 <?php
+if(!isset($_GET['search'])){
      $sqlQuery = 'SELECT * FROM produit';
      $produitsStatement = $db->prepare($sqlQuery);
      $produitsStatement->execute();
      $produits = $produitsStatement->fetchAll();
+}else{
+    $search = $_GET['search'];
+    $sqlQuery = "SELECT * FROM produit WHERE nomProduit LIKE '%$search%' OR descriptionProduit LIKE '%$search%'";
+    $produitsStatement = $db->prepare($sqlQuery);
+    $produitsStatement->execute();
+    $produits = $produitsStatement->fetchAll();
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
