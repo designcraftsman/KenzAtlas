@@ -137,7 +137,7 @@
                   <i class="fa-solid fa-magnifying-glass fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
               </span>
                 <?php if(!isset($_SESSION['nomUtulisateur'])){ ?>
-                <span  type="button" data-bs-toggle="modal" data-bs-target="#login" aria-label="toggleLogin" aria-controls="loginForm">
+                <span  type="button" data-bs-toggle="modal" data-bs-target="#login" aria-label="toggle login" aria-controls="loginForm">
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
                 </span>
                 <?php }else{ ?>

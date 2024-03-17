@@ -83,7 +83,7 @@
                 </svg>
             </a>
             <div class="navbar__container__options order-lg-2 pe-4 ">
-                <span class="m-1" data-bs-toggle="collapse" href="#collapseExample" type="button" aria-expanded="false" aria-controls="collapseExample">
+                <span class="m-1" data-bs-toggle="collapse" href="#collapseExample" type="button" aria-expanded="false" aria-controls="collapseSearch">
                   <i class="fa-solid fa-magnifying-glass fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
               </span>
                 <?php if(!isset($_SESSION['nomUtulisateur'])){ ?>
@@ -115,7 +115,7 @@
                 </a>
             </div>
           </div>
-            <div class="collapse w-100" id="collapseExample">
+            <div class="collapse w-100" id="collapseSearch">
               <div class="card card-body bg-primary border-0  ">
                 <form class="row " id="searchForm" onsubmit="filterProducts(event)">
                   <input id="searchInput" type="text" class="col-lg-10 col-md-8 col-12 m-auto rounded border-1   p-2 d-inline " placeholder="Rechercher un produit" required>
