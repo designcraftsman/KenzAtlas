@@ -137,10 +137,13 @@
                   <i class="fa-solid fa-magnifying-glass fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
               </a>
                 <?php if(!isset($_SESSION['nomUtulisateur'])){ ?>
-                <span  role="button" data-bs-toggle="modal" data-bs-target="#login"  aria-controls="loginForm">
+                  <!-- guest -->
+                <span  role="button" data-bs-toggle="modal" data-bs-target="#login" aria-label="login" aria-haspopup="dialog"  aria-controls="loginForm" aria-expanded="false">
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
                 </span>
+                <!-- guest -->
                 <?php }else{ ?>
+                <!-- user logged in -->
                 <span class="text-decoration-none m-1 d-none d-lg-inline-block " data-bs-toggle="collapse" href="#userCollapse" role="button" aria-expanded="false" aria-label="userMenuToggle" aria-controls="userCollapse" >
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons  navbar__icon m-auto" ></i>
                   
@@ -158,6 +161,7 @@
                     </div>
                   </div>
                 </span>
+                <!-- user logged in -->
                 <?php }?>
                 <a href="panier" class="d-inline-block  m-lg-1 m-0   position-relative navbar__container__options__cart  " aria-label="cartPage" >
                   <span id="cartIconContainer" class="d-inline-block bg-dark rounded-5"></span>
