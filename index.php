@@ -137,7 +137,7 @@
                   <i class="fa-solid fa-magnifying-glass fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
               </a>
                 <?php if(!isset($_SESSION['nomUtulisateur'])){ ?>
-                <span  type="button" data-bs-toggle="modal" data-bs-target="#login" aria-label="toggle login" aria-controls="loginForm">
+                <span  role="button" data-bs-toggle="modal" data-bs-target="#login"  aria-controls="loginForm">
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
                 </span>
                 <?php }else{ ?>
@@ -227,7 +227,7 @@
         <div class="w-100  p-1 d-flex  justify-content-between align-items-center  ">
           <div class="p-1 text-center">
             <?php if(!isset($_SESSION['nomUtulisateur'])){  ?>
-            <span type="button" data-bs-toggle="modal" data-bs-target="#login"  class="text-decoration-none ">
+            <span role="button" data-bs-toggle="modal" data-bs-target="#login"  class="text-decoration-none ">
               <i class="fa-solid fa-user fa-xl navbar__container__options__icons text-secondary " ></i>
               <span class="d-block text-secondary ">Se connecter</span>
             </span>
