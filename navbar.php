@@ -87,7 +87,7 @@
                   <i class="fa-solid fa-magnifying-glass fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
               </a>
                 <?php if(!isset($_SESSION['nomUtulisateur'])){ ?>
-                <span  type="button" data-bs-toggle="modal" data-bs-target="#login">
+                <span  role="button" data-bs-toggle="modal" data-bs-target="#login" aria-label="login" aria-haspopup="dialog"  aria-controls="loginForm" aria-expanded="false">
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
                 </span>
                 <?php }else{ ?>
