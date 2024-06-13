@@ -10,6 +10,10 @@ if(!isset($_POST['nomClient']) || !isset($_POST['prenomClient']) || !isset($_POS
     $orderRecapProducts = json_decode(urldecode($cookieValue), true);
     // Now $orderRecapProducts contains the array from the cookie
         // Retrieve form data
+        $totalCommande = 0;
+        foreach ($orderRecapProducts as $product) {
+            $totalCommande += $product['price'] * $product['quantity'];
+        }
         $nomClient = $_POST["nomClient"];
         $prenomClient = $_POST["prenomClient"];
         $adresseClient = $_POST["adresseClient"];
@@ -22,13 +26,14 @@ if(!isset($_POST['nomClient']) || !isset($_POST['prenomClient']) || !isset($_POS
         include('connection.php');
 
         // Prepare the SQL query using named placeholders
-        $sqlQuery = 'INSERT INTO commandes (idUtulisateur, nomClient, prenomClient, adresseClient, villeClient, codePostalClient, telephoneClient, noteCommandeClient)
-                     VALUES (:idUtulisateur, :nomClient, :prenomClient, :adresseClient, :villeClient, :codePostalClient, :telephoneClient, :noteCommandeClient)';
+        $sqlQuery = 'INSERT INTO commandes (idUtulisateur, totalCommande,  nomClient, prenomClient, adresseClient, villeClient, codePostalClient, telephoneClient, noteCommandeClient)
+                     VALUES (:idUtulisateur,:totalCommande , :nomClient, :prenomClient, :adresseClient, :villeClient, :codePostalClient, :telephoneClient, :noteCommandeClient)';
 
         $insertData = $db->prepare($sqlQuery);
 
         // Bind values to named placeholders
         $insertData->bindParam(':idUtulisateur', $_SESSION['idUtulisateur']);
+        $insertData->bindParam(':totalCommande', $totalCommande);
         $insertData->bindParam(':nomClient', $nomClient);
         $insertData->bindParam(':prenomClient', $prenomClient);
         $insertData->bindParam(':adresseClient', $adresseClient);
@@ -44,9 +49,15 @@ if(!isset($_POST['nomClient']) || !isset($_POST['prenomClient']) || !isset($_POS
         $sqlQueryProducts = "INSERT INTO `produitscommandés` (`numeroCommande`, `idProduit`, `quantiteCommandés`) VALUES ('$numeroCommande', '$id', '$quantite');";
         $db->exec($sqlQueryProducts);
         }
+        $to = "fzoussama25@gmail.com";
+        $subject = "Nouvelle Commande ";
+        $txt = "Oussama fayz a commandé un ghasoul aux herbes";
+        $txt = $nomClient + $prenomClient ."a effectué une commande !" ;
+        mail($to,$subject,$txt);
         header("Location: thank-you");
+        
 }
-?>
+
 
 
 

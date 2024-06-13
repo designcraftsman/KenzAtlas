@@ -1,4 +1,4 @@
-AddOutputFilterByType DEFLATE  text/css text/plain  application/x-javascript application/x-httpd-php
+
    
    
    RewriteEngine On

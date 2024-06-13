@@ -40,7 +40,7 @@
     <link rel="canonical" href="https://kenzatlas.com" />
     <link rel="icon" href="assets/img/logo/LOGO_2.png" type="image/x-icon">
     <!-- Load the main CSS file asynchronously -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
@@ -127,8 +127,8 @@
             </span>
             <a class="navbar-brand " href="." title="Acceuil">
                 <!--Logo image-->
-                <svg xmlns="http://www.w3.org/2000/svg" aria-label="kenzatlasLogo" role="img" width="180" height="70" viewBox="0 0 400 200" class="d-inline-block align-text-top">
-                  <image href="assets/img/logo/svg_white.svg" width="400" height="200"  />
+                <svg xmlns="http://www.w3.org/2000/svg" aria-label="kenzatlasLogo" role="img" width="160" height="65" viewBox="0 0 400 200" class="d-inline-block align-text-top">
+                  <image href="assets/img/logo/svg_white.svg" width="400" height="180"  />
                 </svg>
 
             </a>
@@ -147,20 +147,25 @@
                 <span class="text-decoration-none m-1 d-none d-lg-inline-block " data-bs-toggle="collapse" href="#userCollapse" role="button" aria-expanded="false" aria-label="userMenuToggle" aria-controls="userCollapse" >
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons  navbar__icon m-auto" ></i>
                   
-                   <span class="fs-6 fw-light text-secon text-secondary"><?php echo($_SESSION['prenomUtulisateur'].' '.$_SESSION['nomUtulisateur']); ?></span>
-                   <div class="collapse position-absolute ms-4 " id="userCollapse">
-                    <div class="card card-body   fs-6 fw-normal p-0 ">
-                      <p class="fs-6 p-2  m-0 mb-3 mt-3"><?php echo($_SESSION['emailUtulisateur']); ?></p>
-                      <hr class="m-0 p-0 border-primary mb-2">
-                      <a href="mes-commandes" class="d-block text-dark mb-2  text-decoration-none p-1"><i class="fa-solid fa-boxes-stacked m-2"></i>  Mes commandes</a>
-                      <hr class="m-0 p-0 border-primary mb-2 ">
-                      <a href="user" class="d-block text-dark mb-2  text-decoration-none p-1"><i class="fa-solid fa-user-gear m-2"></i>  Mon compte</a>
-                      <hr class="m-0 p-0 border-primary  mb-2">
-                      <a  href="signout" class="d-block text-dark mb-2 text-decoration-none p-1"><i class="fa-solid fa-right-from-bracket m-2"></i>  Deconnexion</a>
-                      <hr class="m-0 p-0 border-primary ">
-                    </div>
-                  </div>
+                   <span class="fs-6 fw-light text-secondary"><?php echo($_SESSION['prenomUtulisateur'].' '.$_SESSION['nomUtulisateur']); ?></span>
+                   
+                   
                 </span>
+                <div class="collapse" id="userCollapse">
+                      <div class="card card-body p-0">
+                        <h2 class="fw-normal p-3 fs-5">Bonjour,<span>Oussama Fayz</span> !</h2>
+                        <hr class="m-1">
+                        <nav class="p-0">
+                            <ul class="list-unstyled m-0 p-0">
+                              <li  class=" border-dark m-0 p-0 rounded-top "><a class="text-decoration-none text-dark d-block p-3" href="user"><i class="fa-solid fa-user"></i> Gérer votre compte</a></li>
+                              <hr class="m-1">
+                              <li  class=" border-dark m-0 p-0 rounded-top "><a class="text-decoration-none text-dark d-block p-3" href="mes-commandes"><i class="fa-solid fa-user"></i> Mes commandes</a></li>
+                              <hr class="m-1">
+                              <li class="  m-0 p-0 rounded-bottom"><a class="text-decoration-none text-dark d-block p-3 " href="signout"><i class="fa-solid fa-right-from-bracket"></i> Se déconnecter</a></li>
+                            </ul>
+                        </nav>
+                      </div>
+                  </div>
                 <!-- user logged in -->
                 <?php }?>
                 <a href="panier" class="d-inline-block  m-lg-1 m-0   position-relative navbar__container__options__cart  " aria-label="cartPage" >
@@ -184,7 +189,7 @@
             <div class="m-auto ">
               <img loading="lazy"  src="assets/img/logo/svg_yellow (1).svg" alt="KenzAtlas-Logo"  width="180" class="d-inline-block align-text-top">
             </div>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body offcanvasNavbar__nav m-0 p-0 text-center  mt-5">
           <hr class="m-0 p-0">
@@ -327,13 +332,14 @@
 <main>
     <section class="heroSection">
         <div id="carouselExampleDark" class="carousel carousel-dark slide heroSection__container  " data-bs-ride="carousel">
-            <?php if(isset($packs[1]) && isset($packs[2])) { ?>
+        <?php if(!empty($packs[1]['imageProduit1']) && !empty($packs[2]['imageProduit1'])){ ?>
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active bg-secondary  rounded-circle " aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleDark" class="bg-secondary  rounded-circle" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleDark" class="bg-secondary  rounded-circle" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               
             </div>
-            <?php }?>
+            <?php } ?>
             <div class="carousel-inner active heroSection__container__carousel">
               <article class="carousel-item h-100  active heroSection__container__carousel__item" data-bs-interval="10000">
                 <img  src="assets/<?php echo($packs[0]['imageProduit1']); ?>"  class="  d-block w-100 heroSection__container__carousel__item__img " alt="image: <?php echo($packs[0]['nomProduit']); ?>">
@@ -346,9 +352,9 @@
                   <a type="button" href="produit?nomProduit=<?php echo($packs[0]['nomProduit']); ?>" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn  fw-bolder">Acheter Maintenant</a>
                 </div>
             </article>
-              <?php if(isset($packs[1]) && isset($packs[2])) { ?>
+            <?php if(!empty($packs[1]['imageProduit1']) && !empty($packs[2]['imageProduit1'])){ ?>
               <article class="carousel-item h-100   heroSection__container__carousel__item" data-bs-interval="10000">
-                <img  src="<?php echo($packs[1]['imageProduit1']); ?>"  class=" d-block w-100 heroSection__container__carousel__item__img " alt="image: <?php echo($packs[1]['nomProduit']); ?>">
+                <img  src="<?php echo($produitsVedette[1]['imageProduit1']); ?>"  class=" d-block w-100 heroSection__container__carousel__item__img " alt="image: <?php echo($packs[1]['nomProduit']); ?>">
                 <div class=" heroSection__container__carousel__item__info    ">
                   <div class="heroSection__container__carousel__item__info__text ">
                     <h3 class="fs-4 fw-light heroSection__container__carousel__item__info__h3 ">PACK</h3>
@@ -359,7 +365,7 @@
                 </div>
               </article>
               <article class="carousel-item h-100   heroSection__container__carousel__item" data-bs-interval="10000">
-                <img  src="<?php echo($packs[2]['imageProduit1']); ?>"  class="object-fit-cover d-block w-100 heroSection__container__carousel__item__img " alt="image: <?php echo($packs[2]['nomProduit']); ?>">
+                <img  src="<?php echo($produit[2]['imageProduit1']); ?>"  class="object-fit-cover d-block w-100 heroSection__container__carousel__item__img " alt="image: <?php echo($packs[2]['nomProduit']); ?>">
                 <div class=" heroSection__container__carousel__item__info    ">
                   <div class="heroSection__container__carousel__item__info__text ">
                     <h3 class="fs-4 fw-light heroSection__container__carousel__item__info__h3 ">PACK</h3>
@@ -369,7 +375,8 @@
                   <a type="button" href="produit?nomProduit=<?php echo($packs[2]['nomProduit']); ?>" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn  fw-bolder">Acheter Maintenant</a>
                 </div>
               </article>
-              <?php }  ?>
+              <?php } ?>
+
             </div>
           </div>
     </section>
@@ -563,7 +570,7 @@
 
 
     <!-- blog section start-->
-
+    <?php if(!empty($articles)){ ?>
     <section class="container-fluid p-5 blogSection">
       <div class="text-center blogSection__textContainer">
         <h2 class="blogSection__textContainer__title fs-2 fw-bold reveal">De notre blog</h2>
@@ -584,6 +591,7 @@
         <?php } ?>
       </div>
     </section>
+    <?php }?>
 
     <!--blog section end-->
 </main>

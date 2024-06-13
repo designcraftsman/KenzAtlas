@@ -78,7 +78,7 @@
           </span>
             <a class="navbar-brand " href="." title="Acceuil">
                 <!--Logo image-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="180" role="img" height="70" viewBox="0 0 400 200" class="d-inline-block align-text-top">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" width="180" height="65" viewBox="0 0 400 200" class="d-inline-block align-text-top">
                   <image href="assets/img/logo/svg_white.svg" width="400" height="200" alt="KenzAtlas-Logo" />
                 </svg>
             </a>
@@ -94,19 +94,23 @@
                 <span  class="text-decoration-none m-1 d-none d-lg-inline-block" data-bs-toggle="collapse" href="#userCollapse" role="button" aria-expanded="false" aria-controls="collapseExample" >
                   <i class="fa-solid fa-user fa-lg navbar__container__options__icons  navbar__icon m-auto" ></i>
                    <span class="fs-6 fw-light text-secon text-secondary"><?php echo($_SESSION['prenomUtulisateur'].' '.$_SESSION['nomUtulisateur']); ?></span>
-                   <div class="collapse position-absolute ms-4 " id="userCollapse">
-                    <div class="card card-body   fs-6 fw-normal p-0 ">
-                      <p class="fs-6 p-2  m-0 mb-3 mt-3"><?php echo($_SESSION['emailUtulisateur']); ?></p>
-                      <hr class="m-0 p-0 border-primary mb-2">
-                      <a href="mes-commandes" class="d-block text-dark mb-2  text-decoration-none p-1"><i class="fa-solid fa-boxes-stacked m-2"></i>  Mes commandes</a>
-                      <hr class="m-0 p-0 border-primary mb-2 ">
-                      <a href="user" class="d-block text-dark mb-2  text-decoration-none p-1"><i class="fa-solid fa-user-gear m-2"></i>  Mon compte</a>
-                      <hr class="m-0 p-0 border-primary  mb-2">
-                      <a  href="signout" class="d-block text-dark mb-2 text-decoration-none p-1"><i class="fa-solid fa-right-from-bracket m-2"></i>  Deconnexion</a>
-                      <hr class="m-0 p-0 border-primary ">
-                    </div>
-                </div>
+                   
                 </span>
+                <div class="collapse" id="userCollapse">
+                      <div class="card card-body p-0">
+                        <h2 class="fw-normal p-3 fs-5">Bonjour,<span>Oussama Fayz</span> !</h2>
+                        <hr class="m-1">
+                        <nav class="p-0">
+                            <ul class="list-unstyled m-0 p-0">
+                              <li  class=" border-dark m-0 p-0 rounded-top "><a class="text-decoration-none text-dark d-block p-3" href="user"><i class="fa-solid fa-user"></i> Gérer votre compte</a></li>
+                              <hr class="m-1">
+                              <li  class=" border-dark m-0 p-0 rounded-top "><a class="text-decoration-none text-dark d-block p-3" href="mes-commandes"><i class="fa-solid fa-user"></i> Mes commandes</a></li>
+                              <hr class="m-1">
+                              <li class="  m-0 p-0 rounded-bottom"><a class="text-decoration-none text-dark d-block p-3 " href="signout"><i class="fa-solid fa-right-from-bracket"></i> Se déconnecter</a></li>
+                            </ul>
+                        </nav>
+                      </div>
+                  </div>
                 <?php }?>
                 <a href="panier" class="d-inline-block  m-lg-1 m-0   position-relative navbar__container__options__cart  ">
                   <span id="cartIconContainer" class="d-inline-block bg-dark rounded-5"></span>
